@@ -1,0 +1,14 @@
+#blog div h1{
+    color: blue;
+    text-decoration: underline pink 2px;
+    
+  }
+
+  p{ 
+    text-transform: uppercase;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    display:inline;
+}
+
+​
