@@ -27,3 +27,37 @@ while(num <= 20){
 }
 
 
+for (var i = 0; i < 3; i++) {
+    setTimeout(() => {
+      console.log(i);
+    }, 1000);
+  }
+
+
+  // rewrite the while loop as a for loop
+
+for(let x = 9; x >= 1; x-= 1){
+console.log("Hello " + x)
+}
+
+
+
+//let factorial = 2 * 3  * 2
+//console.log(factorial)
+for(let factorial = 12; factorial < 3; factorial*= 1){
+    console.log(factorial)
+}
+
+let solution = 1;
+
+for (let i = 1; i <= 12; i++) {
+  solution *= i;
+}
+
+console.log(solution);
+
+
+for(let sit = 0; sit < 100; sit ++){
+    for(let row = 0; row < 25; row ++)
+    console.log(sit + 1, row - 0);
+}
