@@ -42,3 +42,5 @@ car.changeGear = function(){
 }
 result = car.changeGear()
 console.log(result)
+
+
