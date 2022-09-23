@@ -40,7 +40,7 @@ car.changeGear = function(){
     let gears = [1, 2, 3, 4]
     return gears
 }
-result = car.changeGear()
-console.log(result)
+result = car.changeGear();
+
 
 
