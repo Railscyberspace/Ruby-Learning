@@ -8,12 +8,12 @@ class Person{
 
     sleep(){
          this.energy += 10;
-          //  console.log("Energy is increase", this.energy)
+          console.log("Energy is increase", this.energy)
         
     }
     doSomethingFun(){
        this.energy  -= 10;
-    //console.log("Energy is decreasing, currently at: ", this.energy)
+    console.log("Energy is decreasing, currently at: ", this.energy)
     }
 }
 
@@ -25,11 +25,9 @@ class Worker extends Person{
         this.hourlyWage = hourlyWage;
     }
 
-    
-
     goToWork(){
          this.xp += 10;
-          //  console.log("experince increased by: ", this.xp);
+          console.log("experince increased by: ", this.xp);
 
        }
     }
