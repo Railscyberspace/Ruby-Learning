@@ -76,28 +76,100 @@ sleep(){
 }
 getColor(){
     console.log(this.color)
+   }
+}
+
+class  Cat extends Animal {
+    constructor(sound = "purr", canJumpHIgh = true, canClimbTree = true, color, energy){
+        super(color, energy);
+        this.sound = sound;
+        this.canClimbTree = canJumpHIgh;
+        this.canJumpHIgh = canJumpHIgh;
+    }
+    makeSound(){
+        console.log(this.sound);
+    }
+}
+
+class Bird extends Animal{
+    constructor(sound ="chirp", canFly = true, color, energy){
+        super(color, energy);
+        this.sound = sound;
+        this.canFly =canFly;
+    }
+    makeSound(){
+        console.log(this.sound);
+    }
+}
+
+class HouseCat extends Cat{
+    constructor(tigerSound ="Roar", sound, canJumpHIgh, canClimbTree, color,energy){
+        super(sound, canJumpHIgh, canClimbTree, color,energy);
+        this.tigerSound = tigerSound;
+    }
+    makeSound(option){
+        if(option){
+        }
+        console.log(this.tigerSound)
+    }
+   
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+class Tiger extends Cat {
+    constructor(tigerSound = "roar", sound, canJumpHIgh, canClimbTree, color, energy){
+        super(sound, canJumpHIgh, canClimbTree, color,energy);
+        this.tigerSound = tigerSound;
+    }
+    makeSound(option){
+        if(option){
+            super.makeSound();
+        }
+        console.log(this.tigerSound)
+    }
 }
+
+class Parrot extends Bird{
+    constructor(canTalk = false, sound, canFly, color, energy){
+        super(sound,canFly,color,energy);
+        this.canTalk = canFly;
+    }
+    makeSound(option){
+        if(option){
+            super.makeSound();
+        }
+        if(this.canTalk){
+            console.log("I'm a talking Parrot")
+        }
+    }
+}
+
+var polly = new Parrot(true);
+var fiji = new Parrot(false);
+polly.makeSound();
+fiji.makeSound();
+
+//Pink  color
+// 100
+polly.color;
+polly.energy;
+
+//energy is decreasing
+polly.isActive();
+var penguin = new Bird("shriek", false, "black and white", 200);
+penguin;
+
+penguin.sound;
+penguin.canFly;
+penguin.color;
+penguin.energy;
+penguin.isActive();
+
+var leo = new HouseCat();
+leo.makeSound(false);
+leo.makeSound(true);
+
+var cruudle = new Tiger();
+cruudle.makeSound(false);
+cruudle.makeSound(true);
+
