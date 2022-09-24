@@ -84,7 +84,7 @@ class  Cat extends Animal {
         super(color, energy);
         this.sound = sound;
         this.canClimbTree = canJumpHIgh;
-        this.canJumpHIgh = canJumpHIgh;
+        this.canClimbTree = canClimbTree;
     }
     makeSound(){
         console.log(this.sound);
