@@ -1,0 +1,12 @@
+.space{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+div.form{
+    border-radius: 10px;
+    background-image: url("./backimage.jpg" )
+    
+}
