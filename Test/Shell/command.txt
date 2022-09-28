@@ -1,0 +1,4 @@
+grep [word] [file name]
+
+grep -i [word] [filename] #This will ignore casesenitive
+ls /bin/ grep [file]
