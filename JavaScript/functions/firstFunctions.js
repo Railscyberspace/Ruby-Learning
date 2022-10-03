@@ -20,4 +20,25 @@ const materials = [
     'Lithium',
     'Beryllium'
 ]
-console.log(materials.map(material => material.length))
+console.log(materials.map(material => material.length));
+
+
+
+function mutation(arr){
+    let test = arr[1].toLowerCase();
+    let target = arr[0].toLowerCase();
+    for(let i in test){
+        if(target.indexOf(test[i]) < 0)
+        return false;
+    }
+}
+
+console.log(mutation("Alien", "line"))
+
+// Arrow Function
+const bob2 = (a) => a + 100;
+console.log(bob2(3)) // Function is called here
+
+
+
+
