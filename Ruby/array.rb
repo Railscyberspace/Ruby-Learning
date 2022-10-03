@@ -1,19 +1,19 @@
 
 arr = [1, 2, 3, 4, 5].to_a
-puts(arr)
+
 def my_arr(param)
     new_arr = []
     x = 0
 while x < param.length do 
-     param[x] * 2
-    result =  new_arr.push(param[x] * 2)
+     puts param[x] * 2
+   # result =  new_arr.push(param[x] * 2)
     x += 1
 end
-return result
+return param
 
 end
-save = my_arr(arr).to_a
-puts(save)
+save = my_arr([arr])
+puts([save])
 
 
 
