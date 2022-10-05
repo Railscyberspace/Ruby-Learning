@@ -17,7 +17,7 @@ const f = function(x){
 
 const d = f(2)
 
-const numbers =  [2, 5, 10, 15, 20];
+const numbers =  [0, 1, 2, 5, 10];
 
 
 const save = map(f, numbers)
