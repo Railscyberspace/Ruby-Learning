@@ -1,9 +1,11 @@
 
 
 
-function autoMakerFunction(theObjectPassedIn){
+const autoMakerFunction = (theObjectPassedIn) => {
     theObjectPassedIn.make = "lexus"
-     //These return the automaker 
+    theObjectPassedIn.model = "benz"
+    theObjectPassedIn.year = 2023
+     
 }
 
 
@@ -22,13 +24,16 @@ console.log(auto)
 const myAuto = autoMakerFunction(autoMaker);
 
 
-
+// accessing the property of automaker and changing it
 const callAuto = autoMaker.make
 console.log(callAuto)
+console.log(autoMaker.model)
+console.log(autoMaker.year)
 
 
 
-function myFunc(theObject) {
+
+function myFunc(theObject) { 
     theObject.make = 'Toyota';
   }
   
@@ -44,6 +49,15 @@ function myFunc(theObject) {
   
   // the make property is changed by the function
   myFunc(mycar);
+
   // y gets the value "Toyota"
   const y = mycar.make;
   console.log(y)
+
+
+  const Sqaure = function num (number){
+    return number * number
+  }
+
+const z = Sqaure(5)
+console.log(z)
