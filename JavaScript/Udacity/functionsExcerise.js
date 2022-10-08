@@ -28,6 +28,7 @@ console.log(buildTriangle(10));
 
 
 console.log("\n\n\n\n\n")
+
 let message = " ";
 const laugh = (num) =>{
 
