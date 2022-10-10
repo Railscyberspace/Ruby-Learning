@@ -34,7 +34,7 @@ words.forEach(function(word, num, all){
 
 const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299,36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
 
-//const miniTest = [12, 29, 11, 3]
+const miniTest = [12, 29, 11, 3]
 test.forEach(function(allDivisble, notDivisa){
     if(allDivisble  % 3 === 0 ){;
          test[notDivisa] = test[notDivisa] + 100;
@@ -50,3 +50,13 @@ test.forEach(function (item, index) {
     }
   });
   console.log(test);
+
+
+  test.forEach(function (item, index) {
+    if (item % 3 === 0) {
+      console.log("Element at index " + index + " is divisible by 3");
+      test[index] = test[index] + 100;
+     } else {
+       console.log("Element " + item + " is not divisible by 3");
+    } 
+  });
