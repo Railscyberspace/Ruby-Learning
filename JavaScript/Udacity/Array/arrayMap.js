@@ -32,7 +32,7 @@ const totals = bills.map(function(element) {
 console.log(totals);
 
 
-    const total = bills.map(function(total){
+const total = bills.map(function(total){
     total *= 1.15
         return  Number(total).toFixed(2)
  })  
