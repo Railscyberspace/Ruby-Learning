@@ -11,8 +11,15 @@ const donuts = [
 
    donuts.forEach(function(arrayItSelf){
     
-       console.log(`Jelly donut ${arrayItSelf.type}`)
-       return arrayItSelf.type
+       console.log(` ${arrayItSelf.type} cost ${arrayItSelf.cost} each`)
+       // return arrayItSelf.type + arrayItSelf.cost
        
   })
 
+  donuts.forEach(function(donut){
+
+       // donut represents a single element of donuts array
+       // donut is an object, therefore you can access its properties using a dot notation
+       console.log(donut.type+" donuts cost $"+donut.cost+" each");
+   });
+   
