@@ -20,14 +20,14 @@ const cat = {
       console.log('Meow!');
     },
     greet: function (name) {
-      console.log(`Hello ${this.name}`);
+      console.log(`Hello ${name}`);
     }
   };
 
 cat["age"] = 12//Changing the valueo of age here
 console.log(cat.age)
 
-console.log(cat.greet())
+console.log(cat.greet("Rails"))
 
 //Creating  A new object and adding values to it
 const  printer = {}
@@ -56,3 +56,17 @@ iceCreamCopy.Richard;
 
 iceCreamOriginal.Richard;
 // 99
+
+const triangle = {
+  type: 'polygon',
+  sides: 3,
+  sumOfAngles: 180,
+  equilateral: true,
+  equiangular: true
+};
+
+Object.keys(triangle)
+const result = []
+for(let pop in triangle)
+result.push(pop)
+console.log(result)
