@@ -14,12 +14,33 @@ const roles = mentor.introduce("Javascript");
 console.log(roles)
 
 //EXcerise
-const SandWich = function(bread, [], meat){
-    this.bread = bread;
-    this.sandwich = ["fish", "tatarus", "catfish"];
-    this.meat = meat
+class SandWich {
+    constructor(bread, [], meat) {
+        this.bread = bread;
+        this.sandwich = ["fish", "tatarus", "citrus"];
+        this.meat = meat;
 
+    }
 }
 
 const Sand = new SandWich("wheat",[], "vegetarian")
 console.log(Sand)
+
+
+
+const mockBird = {
+    title: 'To Kill a Mockingbird',
+    describe: function(){
+        console.log(`${this.title} is a classic novel`)
+
+    },
+}
+
+const pride = {
+    title: 'Pride and Prejudice'
+  }
+
+const bird = mockBird.describe();
+console.log(bird)
+
+
