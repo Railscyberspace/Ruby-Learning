@@ -35,7 +35,7 @@ const addTaxToPrices = TaxePrice = (taxsRate, ...TaxAdded) => {
 let shoppedItem = addTaxToPrices((1.5), 25, 30 ,35, 40);
 console.log(shoppedItem);
 
-//Using Spear Operator and Rest OPerator to join arrays
+//Using Spead Operator and Rest OPerator to join arrays
 const fruits = ["apples", "pears", "mangoes", "oranges"];
 const berries = ["juices", "citrus", "bananas"]
 const fruitsberries = [...fruits, ...berries];//Concanting
@@ -53,7 +53,7 @@ const CarToyota = {...Car, ...Toyota};
 console.log(CarToyota);
 
 
-//Copying an Object to another one Using spear OPerator
+//Copying an Object to another one Using spead OPerator
 const Motor1 = {
     speed:250,
     color:"pink"
