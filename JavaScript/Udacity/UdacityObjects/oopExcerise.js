@@ -12,20 +12,20 @@ const musicData = [
     { artist: 'Justin Bieber', name: 'Purpose', sales: 554000 }
 ];
 
-// const albumSalesStrings = musicData.map(function(music){
-//     return ` The song ${music.artist}  is among ${music.name} best selling songs of ${music.sales} in 2019`
-// })
+const albumSalesStrings = musicData.map(function(music){
+    return ` The song ${music.artist}  is among ${music.name} best selling songs of ${music.sales} in 2019`
+})
 
-// console.log(albumSalesStrings);
+console.log(albumSalesStrings);
 
 
-// const names = ['David', 'Richard', 'Veronika'];
+const names = ['David', 'Richard', 'Veronika'];
 
-// const shortNames = names.filter(function(name) {
-//   return name.length < 6;
-// });
+const shortNames = names.filter(function(name) {
+  return name.length < 6;
+});
 
-// console.log(shortNames)
+console.log(shortNames)
 
 
 const albumSalesString = musicData.filter(function(len){
