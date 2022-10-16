@@ -15,4 +15,3 @@ droneKeys.forEach( function(key) {
 })
 console.log(result)
 
-new Map()

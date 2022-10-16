@@ -1,0 +1,23 @@
+{
+  "name": "ruby-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RailsAbam/Ruby-Learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RailsAbam/Ruby-Learning/issues"
+  },
+  "homepage": "https://github.com/RailsAbam/Ruby-Learning#readme",
+  "devDependencies": {
+    "jest": "^29.2.0"
+  }
+}
