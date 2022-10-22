@@ -1,22 +1,22 @@
-/* *{
+*{
   margin: 0;
   padding: 0;
-} */
-
+}
 
 body {
-    /* font-family: 'Tangerine', serif; */
+    font-family: 'Tangerine', serif; 
     background-color: #EDEFEE;
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+    position:relative;
   }
-
-
+ 
   h1{
     font-size: 3rem;
   }
+
 
 
   h2{
@@ -41,6 +41,36 @@ body {
     flex-flow:row wrap;
     justify-content: stretch;
   }
+  <!-- <section>
+      <article>
+          <div class="container">
+          <h1>Heading 1</h1>
+          <div>
+              <img class = "item" src="/Images/carrots.jpeg" alt="cart_image" sytle ="width": 200px;style ="height": 200px >
+              
+          </div>
+            <p>And that's only the beginning of what you can do with the Fonts API and CSS</p>
+      </article>
+
+      <article>
+          <h2>Heading 1</h2>
+          <img class = "item" src="/Images/Potota.jpg" alt="cart_image" sytle ="width": 100px;style ="height": 500px >
+          <p>That sentence is ordinary text,so you can change how it looks by using CSS</p>
+      </article>
+  </section>
+
+  <section>
+      <article>
+          <h1>heading 2</h1>
+          <img class = "item" src="/Images/Food-from-plants-1.jpg" alt="cart_image" sytle ="width": 200px;style ="height": 200px >
+          <p>Then open the file in a modern web browser</p>
+      </article>
+      <article>
+          <h2>heading 2</h2>
+          <p>You can start using the Google Fonts API in just two step</p>
+      </article>
+  </div>
+  </section> -->
 
 .flex-container li{
   list-style-type:none ;
@@ -60,7 +90,27 @@ body {
 }
 
 
+.img{
+  border:0;
+}
 
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.item{
+  margin: 5px;
+}
+
+.itemlast{
+  padding-left: 50%;
+  padding-bottom:45% ;
+}
+/* 
   section{
     display: flex;
     flex: 0;
@@ -78,4 +128,4 @@ body {
   footer div{
     flex: 1;
   }
-
+ */
