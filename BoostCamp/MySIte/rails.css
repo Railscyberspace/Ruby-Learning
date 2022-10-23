@@ -3,26 +3,82 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
    
 
 }
 
 
-p{
+body{
     font-family: 'Tangerine', serif;
-    font-size: 30px;
-    /*   background-image: url("./images/mypicture.png");
-}*/
- 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:#777;
+    padding: 20px;
+
 }
 
-.resume .resume_left ul li .icon {
-    width: 35px;
-    height: 35px;
-    background: #fff;
-    color: #0bb5f4;
-    border-radius: 50%;
-    margin-right: 15px;
-    font-size: 16px;
-    position: relative;
+.header{
+    height: 95vh;
+    background-image: linear-gradient(
+        to left bottom,
+         rgba(213, 111, 204, 0.966),
+         rgba(157, 40, 180, 0.13)),
+         url("./images/mypicture.png");
+    background-size:cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh,0 100% );
 }
+
+.logobox{
+ top: 40px;
+ left: 40px;
+}
+
+.logo{
+    border-radius: 15px;
+}
+
+.heading-main{
+    color: #fff;
+    text-transform: capitalize;
+   
+
+}
+
+.secondary-main{
+    display: block;
+    font-size: 40px;
+    letter-spacing: 10px;
+
+
+}
+.secondary-sub{
+    display: block;
+    font-size: 38px;
+    letter-spacing: 5px;
+    
+
+}
+
+
+/* 
+
+.title{
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.bold{
+    display: inline-block;
+
+}
+.media{
+    text-decoration: none;
+
+}
+a .media:hover{
+    color: #ffffff;
+} */
