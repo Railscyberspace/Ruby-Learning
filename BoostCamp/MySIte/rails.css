@@ -46,6 +46,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+ 
 }
 .heading-main{
     color: #fff;
@@ -141,6 +142,7 @@ body{
     top: 0;
     left:0;
     z-index: -1;
+    transition: all .4s;
 }
 /* .btn-white::after{
     background-color:#fff
