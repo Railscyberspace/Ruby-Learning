@@ -5,3 +5,5 @@ function Intro2(){
         </div>
     );
 };
+
+export default Intro2;
