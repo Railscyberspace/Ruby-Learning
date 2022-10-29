@@ -7,6 +7,7 @@ import Maths from './Component/Maths';
 import FLoor from './Component/Floor';
 import AddNum from './Component/AddNum';
 import Card from './Component/Card';
+import Button from './Component/Button';
 
 
 function App() {
@@ -23,6 +24,11 @@ function App() {
     <Card   h2 = "First card's h3"  h3 ="First card's h3"/>
     <Card   h2 = "Second card's h2" h3 = "second card's h3"/>
     <Card   h2 = "Third card's h3" h3 = "Third card's h3"/>
+    </div>
+    
+    <div>
+      <h1>Welcome to these Button</h1>
+    <Button welcome = "I'm a button"/>
     </div>
  
    
