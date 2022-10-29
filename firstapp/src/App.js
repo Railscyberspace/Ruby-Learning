@@ -6,6 +6,7 @@ import Nav from './Component/Nav'
 import Maths from './Component/Maths';
 import FLoor from './Component/Floor';
 import AddNum from './Component/AddNum';
+import Card from './Component/Card';
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
     <Maths/>
     <FLoor/>
     <AddNum />
+    <Card   h2="First card's h3"  h3="First card's h3"/>
+    <Card />
+    <Card/>
 
    
 
