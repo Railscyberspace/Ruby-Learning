@@ -12,11 +12,13 @@ import ButtonTest from './Component/Testing/ButtonTest';
 import GuessGame from './Component/Testing/GuessGame';
 import Time from './Component/Time';
 import Typing from './Component/Testing/Typing';
+import Form from './Component/Testing/Form';
 
 function App() {
   const date = new Date()
   return (
     <div>
+      <Form/>
       <Typing/>
     <Time message ={date.toLocaleTimeString()}/>
     <Heading name = "Rails" />

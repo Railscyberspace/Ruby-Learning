@@ -1,16 +1,15 @@
 import {useState} from  'react';
 
 function Typing(){
-  const [inputText, setText] = useState('hello'); 
+  const [inputText, setText] = useState('Hello'); 
   function handleChange(e) { 
     setText(e.target.value); 
   };
-
     return(
      <div>
-        <input value={inputText} onChange={handleChange} /> 
+        <input value = {inputText} onChange={handleChange} /> 
       <p>You typed: {inputText}</p> 
-      <button onClick={() => setText('hello')}> 
+      <button onClick = {() => setText()}> 
         Reset 
       </button> 
      </div>
@@ -18,3 +17,5 @@ function Typing(){
 };
 
 export default Typing;
+
+
