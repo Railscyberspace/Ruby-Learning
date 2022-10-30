@@ -10,10 +10,15 @@ import Card from './Component/Card';
 import Button from './Component/Button';
 import ButtonTest from './Component/Testing/ButtonTest';
 import GuessGame from './Component/Testing/GuessGame';
+import Time from './Component/Time';
+import Typing from './Component/Testing/Typing';
 
 function App() {
+  const date = new Date()
   return (
     <div>
+      <Typing/>
+    <Time message ={date.toLocaleTimeString()}/>
     <Heading name = "Rails" />
     <Nav/>
     <Promo/>
