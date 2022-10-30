@@ -8,7 +8,8 @@ import FLoor from './Component/Floor';
 import AddNum from './Component/AddNum';
 import Card from './Component/Card';
 import Button from './Component/Button';
-
+import ButtonTest from './Component/Testing/ButtonTest';
+import GuessGame from './Component/Testing/GuessGame';
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
     <div>
       <h1>Welcome to these Button</h1>
     <Button welcome = "I'm a button"/>
+    </div>
+    <div>
+      <ButtonTest/>
+      <GuessGame/>
     </div>
  
    
