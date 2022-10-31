@@ -17,6 +17,10 @@ import Main  from './ParentChildComponent/Main';
 import Fruit from './ParentChildComponent/Fruit';
 import FruitCounter from './ParentChildComponent/FriutCounter';
 import React from 'react';
+import HomeContact from './ParentChildComponent/HomeContact';
+import HomeAboutUs from './ParentChildComponent/HomeAboutUs';
+import {Routes, Route, Link} from 'react-router-dom';
+
 
 
 function App() {
@@ -29,6 +33,15 @@ function App() {
   const date = new Date()
   return (
     <div>
+      <nav>
+        <Link to = "/homecontact" className='nav-item'>Home</Link>
+        <Link to ="/homeaboutus" className='nav-item'>About us</Link>
+      </nav>
+      <Routes>
+        <Route path ='/contact' element ={<HomeContact/>}></Route>
+        <Route path ='/contactaboutus' element ={<HomeAboutUs/>}></Route>
+      </Routes>
+      
       
        <h1>Where should the state go?</h1>
       <Fruit fruits = {fruits} />
