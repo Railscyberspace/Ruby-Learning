@@ -18,6 +18,7 @@ import Fruit from './ParentChildComponent/Fruit';
 import FruitCounter from './ParentChildComponent/FriutCounter';
 import React from 'react';
 
+
 function App() {
   //useState  
   const [fruits] = React.useState([
@@ -28,6 +29,7 @@ function App() {
   const date = new Date()
   return (
     <div>
+      
        <h1>Where should the state go?</h1>
       <Fruit fruits = {fruits} />
       <FruitCounter  fruits = {fruits} />
@@ -57,10 +59,6 @@ function App() {
       <ButtonTest/>
       <GuessGame/>
     </div>
- 
-   
-
-
     </div>
 
   );
