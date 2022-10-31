@@ -13,11 +13,14 @@ import GuessGame from './Component/Testing/GuessGame';
 import Time from './Component/Time';
 import Typing from './Component/Testing/Typing';
 import Form from './Component/Testing/Form';
+import Main  from './ParentChildComponent/Main';
 
 function App() {
   const date = new Date()
   return (
     <div>
+
+      <Main msg = "I passed through the Header and the Wrapper and I reached the Button component" />
       <Form/>
       <Typing/>
     <Time message ={date.toLocaleTimeString()}/>
