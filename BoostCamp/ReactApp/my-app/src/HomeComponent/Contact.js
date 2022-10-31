@@ -1,7 +1,7 @@
 function Contact(){
    return(
     <di>
-        Home
+        <h1>Contact Little Lemon on this page.</h1>
     </di>
    );
 };
