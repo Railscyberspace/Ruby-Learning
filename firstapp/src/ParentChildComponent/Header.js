@@ -1,5 +1,6 @@
 
 import Wrapper from "./Wrapper";
+
 function Header(props) { 
     return ( 
       <div style={{ border: "10px solid whitesmoke" }}> 

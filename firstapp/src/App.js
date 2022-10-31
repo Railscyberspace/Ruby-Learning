@@ -14,11 +14,23 @@ import Time from './Component/Time';
 import Typing from './Component/Testing/Typing';
 import Form from './Component/Testing/Form';
 import Main  from './ParentChildComponent/Main';
+import Fruit from './ParentChildComponent/Fruit';
+import FruitCounter from './ParentChildComponent/FriutCounter';
+import React from 'react';
 
 function App() {
+  //useState  
+  const [fruits] = React.useState([
+    {fruitName: 'apple', id: 1},
+    {fruitName: 'apple', id: 2},
+    {fruitName: 'plum', id: 3},
+]);
   const date = new Date()
   return (
     <div>
+       <h1>Where should the state go?</h1>
+      <Fruit fruits = {fruits} />
+      <FruitCounter  fruits = {fruits} />
 
       <Main msg = "I passed through the Header and the Wrapper and I reached the Button component" />
       <Form/>

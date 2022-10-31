@@ -3,7 +3,7 @@ import {useState} from 'react';
 function Form(){
     
     const [form, setForm] = useState({
-        firstname: "Rails", lastName: "Abam", Email: "abamsunday@gmail.com"
+        firstname: "Rails", lastName: "Abam", Email: "abamsunday@gmail.com",
     });
     const add = [ form.firstname + form.lastName, form.Email]
     return(
@@ -21,11 +21,10 @@ function Form(){
                 Email:
                 <input value ={form.Email} onChange = {e => {setForm({...form,Email: e.target.value})}}/>
             </label><br/>
-            <button value={form.submit} onClick = {e => {setForm({...form, add:alert(add.toLocaleString())})}}>submit</button>
+            <button value={form.submit} onClick = {e => {setForm({...alert(add.toLocaleString())})}}>submit</button>
             <p>{form.firstname}</p>
             <p>{form.lastName}</p>
             <p>{form.Email}</p>
-            <p>{}form.add</p>
         </div>
         
  
