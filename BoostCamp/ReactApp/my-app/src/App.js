@@ -28,7 +28,7 @@ function App() {
         <Route path ="/signUp" element ={<SignUp/>}></Route>
         <Route path ="/logout" element ={<LogOut/>}></Route>
       </Routes>
-      <DisplayMessage/>
+      
 {/* 
       <Contact/>
       <Home/>

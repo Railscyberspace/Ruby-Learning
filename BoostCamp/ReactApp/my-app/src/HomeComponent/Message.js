@@ -1,5 +1,5 @@
 import WeekDay from "./WeekDay";
-import WeekEnd from "./WeekEnds";
+import WeekEnd from "./WeekEnd";
 
 
 function Message(props){
