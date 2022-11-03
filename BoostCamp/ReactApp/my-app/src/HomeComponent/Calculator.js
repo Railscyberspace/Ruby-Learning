@@ -11,7 +11,7 @@ function plus(e) {
   }; 
  
 
-  function minus(e) { 
+function minus(e) { 
     // Add the code for the minus function 
     e.preventDefault();
     setResult((result) => result - Number(inputRef.current.value))
@@ -41,9 +41,8 @@ function resetResult(e) {
     e.preventDefault();
     setResult((preVal) => preVal * 0)
 }; 
-
     return(
-    <div>
+    <div className="card-btn-btn">
             <h1>Simplest Working Calculator</h1>
         <form>
                 <p ref={resultRef}>{result}</p>
@@ -52,13 +51,13 @@ function resetResult(e) {
               {/* </div> */}
                 <div className="card-btn">
                 <button className = "btn" onClick={plus}>add</button>
-                <button className="btn" onClick={times}>Times</button>
-                <button  className="btn" onClick={divide}>Divide</button>
-                <button className="btn" onClick={minus}>Minus</button>
-                <button className="btn" onClick={resetInput}>ReSetInput</button>
-                <button className="btn" onClick={resetResult}>ReSetResult</button>
+                <button className ="btn"  onClick={times}>Times</button>
+                <button  className ="btn" onClick={divide}>Divide</button>
+                <button className ="btn"  onClick={minus}>Minus</button>
+                <button className ="btn" onClick={resetInput}>ReSetInput</button>
+                <button className ="btn" onClick={resetResult}>ReSetResult</button>
                 </div>
-                </div>
+            </div>
            
             </form>
         
