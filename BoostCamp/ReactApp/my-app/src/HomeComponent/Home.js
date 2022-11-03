@@ -2,7 +2,7 @@ import  carrots from './Assests/carrots.jpeg'
 import DisplayMessage from "./MessageButton";
 import ReactPlayer from "react-player";
 import React from 'react';
-import {toggle1}  from './AudioPlayer';
+import toggle1  from './AudioPlayer';
 import toggle2 from './AudioPlayer'
 
 

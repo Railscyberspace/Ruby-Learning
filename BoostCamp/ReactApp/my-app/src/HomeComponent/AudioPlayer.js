@@ -19,14 +19,14 @@ function toggle1(){
     }
 }
 
-function toggle2(){
-    if(bird1.paused){
-        bird1.play()
-    }else{
-        bird1.pause()
-    }
-}
+// function toggle2(){
+//     if(bird1.paused){
+//         bird1.play()
+//     }else{
+//         bird1.pause()
+//     }
+// }
 
 
 
-export default {toggle1, toggle2};
+export default toggle1;

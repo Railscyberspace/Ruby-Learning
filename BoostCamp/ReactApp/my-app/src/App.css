@@ -58,16 +58,53 @@ button {
   padding: 10px;
   border-radius: 5px;
 }
-input {
+
+.card{
   display: block;
+  margin-left: 100px;
+  text-align: center;
+  background-color: black;
+  border-radius: 20px light;
+}
+
+.card-btn{
+  padding: 50px;
+  border-radius: 30px;
+  display: block;
+ 
+}
+.btn{
+  background-color: aquamarine;
+  border-radius: 4px solid;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.btn:nth-last-child(3){
+  background-color: bisque;
+}
+
+.btn:nth-last-child(4){
+  background-color: cornflowerblue;
+}
+.btn:nth-last-child(5){
+  background-color: hotpink;
+}
+
+input {
+
   margin-bottom: 20px;
 }
+
 button {
   border: 1px solid gray;
   background: whitesmoke;
   margin-right: 5px;
 }
-button:nth-last-child(2),
+
+button:nth-last-child(2){
+  background-color:crimson;
+}
+
 button:nth-last-child(1) {
   background: tomato;
   color: white;
