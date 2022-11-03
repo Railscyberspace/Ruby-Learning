@@ -1,8 +1,7 @@
 
-function WeekDay(){
+function WeekDay(props){
     return(
         <div>
-            <h1>Week Days Activities:</h1>
             <p>Time for work</p>
         </div>
     )

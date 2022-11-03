@@ -1,7 +1,6 @@
- function WeekEnd(){
+ function WeekEnd(props){
     return(
         <div>
-                 <h2>WeekEnd Activities:</h2>
                  <p>Time to watch Movie</p>
         </div>
     ) 

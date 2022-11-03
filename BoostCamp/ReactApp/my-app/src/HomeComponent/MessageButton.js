@@ -1,9 +1,9 @@
-import Message from "./Message";
+import MessageShow from "./Message";
 
 function DisplayMessage(props){
      return(
         <div>
-            <button onClick={Message}>Show Your Activity:</button>
+            <button onClick={props.MessageShow}>Show Your Activity:</button>
         </div>
      );
 };
