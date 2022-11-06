@@ -65,6 +65,8 @@ function resetResult(e) {
 
        ); 
 } 
-
-
 export default Calculator;
+
+
+
+
