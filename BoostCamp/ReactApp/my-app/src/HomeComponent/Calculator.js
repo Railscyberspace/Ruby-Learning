@@ -45,7 +45,7 @@ function resetResult(e) {
     <div className="card-btn-btn">
             <h1>Simplest Working Calculator</h1>
         <form>
-                <p ref={resultRef}>{result}</p>
+                <p ref={resultRef}>{"Result:"}{result}</p>
                 <div className="card">
                 <input pattern="[0-9]"ref={inputRef} type="number" placeholder="Type a number" />
               {/* </div> */}
