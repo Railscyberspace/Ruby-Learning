@@ -5,18 +5,16 @@ import Home from './HomeComponent/Home';
 import Login from './HomeComponent/Login';
 import SignUp from './HomeComponent/SignUp';
 import LogOut from './HomeComponent/LogOut';
-import Message from './HomeComponent/Message';
 import {Routes, Route, Link } from 'react-router-dom';
 import Calculator from './HomeComponent/Calculator';
 
 function App() {
   return (
     <div className="App">
-
-      <nav>
-    
+    <header>
+    <nav>
         <Link to ="home" className ="nav-item">Home</Link>
-        <Link to ="contact" className ="nav-item">Contact Us</Link>
+        <Link to ="contact" className ="nav-item">About Us</Link>
         <Link to ="login" className ="nav-item">Login</Link>
         <Link to ="signup" className ="nav-item">SignUp</Link>
         <Link to ="logout" className ="nav-item">LogOut</Link>
@@ -31,16 +29,9 @@ function App() {
         <Route path ="/signUp" element ={<SignUp/>}></Route>
         <Route path ="/logout" element ={<LogOut/>}></Route>
       </Routes>
-      
-{/* 
-      <Contact/>
-      <Home/>
-      <Login/>
-      <SignUp/>
-      <LogOut/> */}
-      {/* <WeekDay/>
-      <WeekEnd/> */}
-      {/* <Message/> */}
+
+    </header>
+    
     </div>
   );
 }
