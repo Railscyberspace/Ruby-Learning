@@ -1,5 +1,4 @@
 
-
 * {
   font-family: sans-serif;
   margin: 0px;
@@ -18,6 +17,10 @@ nav a {
   text-align: center;
 }
 
+header{
+  display: grid;
+
+}
 
 .nav-item{
   font-family: 'Courier New', Courier, monospace;
