@@ -1,0 +1,16 @@
+
+    .logo-header{
+    display: flex;
+    padding-left: 0;
+    padding-top: 10;
+}
+
+.logo{
+    max-width: 10vh;
+    max-height: 10vh;
+    border-radius: 50px;
+}
+
+.nav-link{
+  margin-left: 50px;
+}
