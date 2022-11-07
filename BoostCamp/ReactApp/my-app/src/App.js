@@ -7,11 +7,13 @@ import SignUp from './HomeComponent/SignUp';
 import LogOut from './HomeComponent/LogOut';
 import {Routes, Route, Link } from 'react-router-dom';
 import Calculator from './HomeComponent/Calculator';
+import 
 
 function App() {
   return (
     <div className="App">
     <header>
+    <img src =  {carrots} alt ='Carrota picture'/> 
     <nav>
         <Link to ="home" className ="nav-item">Home</Link>
         <Link to ="contact" className ="nav-item">About Us</Link>

@@ -1,3 +1,0 @@
-total 4
-4 -rw-rw-r-- 1 rails rails 37 Sep 28 00:18 file.txt
-0 -rw-rw-r-- 1 rails rails  0 Sep 28 00:21 output.txt
