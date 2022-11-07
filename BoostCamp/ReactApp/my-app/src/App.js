@@ -10,7 +10,7 @@ import {Routes, Route, Link } from 'react-router-dom';
 import Calculator from './HomeComponent/Calculator';
 import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
-import Batteries from './ProductComponent/Batteries';
+import Inverters from './ProductComponent/Inverters';
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Link to ="signup" className ="nav-item">SignUp</Link>
         <Link to ="logout" className ="nav-item">LogOut</Link>
         <Link to = "calculator" className='nav-item'>Calculator</Link>
-        <Link to ="batteries" className='nav-item'>Batteries</Link>
+        <Link to ="inverters" className='nav-item'>Inverters</Link>
       </div>     
   </nav>
       <Routes>
@@ -38,7 +38,7 @@ function App() {
         <Route path ="/login" element ={<Login/>}></Route>
         <Route path ="/signUp" element ={<SignUp/>}></Route>
         <Route path ="/logout" element ={<LogOut/>}></Route>
-        <Route path='/batteries' element={<Batteries/>}></Route>
+        <Route path='/inverters' element={<Inverters/>}></Route>
       </Routes>
 
     </header>
