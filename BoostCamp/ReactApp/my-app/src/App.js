@@ -11,6 +11,7 @@ import Calculator from './HomeComponent/Calculator';
 import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
+import Batteries from './ProductComponent/Batteries';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Link to ="logout" className ="nav-item">LogOut</Link>
         <Link to = "calculator" className='nav-item'>Calculator</Link>
         <Link to ="inverters" className='nav-item'>Inverters</Link>
+        <Link to = "batteries" className = 'nav-item'>Batteries</Link>
       </div>     
   </nav>
       <Routes>
@@ -39,6 +41,7 @@ function App() {
         <Route path ="/signUp" element ={<SignUp/>}></Route>
         <Route path ="/logout" element ={<LogOut/>}></Route>
         <Route path='/inverters' element={<Inverters/>}></Route>
+        <Route path='/batteries' element={<Batteries/>}></Route>
       </Routes>
 
     </header>
