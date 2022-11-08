@@ -100,8 +100,8 @@ function Inverters(){
             <div class="card" width={18}>
             <img src={lithiumbatteries} height ={200} width ={200} alt ="Lithium battery"/>
                 <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <h5 class="card-title">Lithium Batteries</h5>
+                <h6 class="card-subtitle mb-2 text-muted">5.5kwh 25.5v</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <span>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -112,8 +112,8 @@ function Inverters(){
         <div class="card" width={18}>
         <img src ={xtrapower} height ={200} width ={200} alt ="xtrapower" className='rounded float-start'/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h5 class="card-title">xtrapower Hybrid Inverter</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">3.5kva Hybide series 48v</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <span>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -124,8 +124,8 @@ function Inverters(){
         <div class="card" width={18}>
         <img src={lithiumbattery} height = {200} width ={200} alt = 'lithiumbattery' className='rounded float-start'/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h5 class="card-title">Hybide Inverter</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">5kva 48v series</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <span>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -151,8 +151,8 @@ function Inverters(){
             <div class="card" width={18}>
             <img src ={femicareInverter48v}  height ={200} width ={200} alt ="Crown 48v 5kva Inverter"/> 
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <h5 class="card-title">Femcare Inverter</h5>
+                <h6 class="card-subtitle mb-2 text-muted">24v-48v 2.5kva </h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <span>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -163,8 +163,8 @@ function Inverters(){
             <div class="card" width={18}>
             <img src={VimINverter48v} height={200} width ={200} alt = 'femicare Inverter 48v 3.5kva'/> 
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <h5 class="card-title">Vim Solar generator</h5>
+                <h6 class="card-subtitle mb-2 text-muted">600Watts series</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <span>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -177,8 +177,8 @@ function Inverters(){
             <div class="card" width={18}>
                 <img src={Proton24V} height={200} width ={200} alt = "Proton hyride inverter"/>
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <h5 class="card-title">Proton Hybide Inverter</h5>
+                <h6 class="card-subtitle mb-2 text-muted">24v 2.5kva series</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <span>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -189,8 +189,8 @@ function Inverters(){
     <div class="card" width={18}>
         <img src ={ProtonHybrid48v} height={200} width={200} alt ="proton Hybrid inverter series"/>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <h5 class="card-title">Proton Hybide series </h5>
+            <h6 class="card-subtitle mb-2 text-muted">5kva 48v series</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <span>N580,000.00</span>
             <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -201,8 +201,8 @@ function Inverters(){
                 <div class="card" width={18}>
                     <img src ={ProtonHyrbrid48v} height={200} width={200} alt ="Hybide series inverter"/>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h5 class="card-title">Proton Hybide series</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">5kva - 10kva 48v</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <span>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
@@ -210,9 +210,6 @@ function Inverters(){
         </div>
     </div>
   </div>
-
-
-
 </div>
 </div>
 
