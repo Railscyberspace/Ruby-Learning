@@ -12,37 +12,37 @@ function Inverters(){
         <div>
             <div class="container text-center">
   <div class="row align-items-start">
-    <div class="col">
-    <img src= { inverter5kvapc} height={200} width ={200} alt = "Hybrid inveter"/>
+    <div class="col"> 
+    <img src= { inverter5kvapc} height={200} width ={200} alt = "Hybrid inveter" className='rounded float-start'/>
     </div>
     <div class="col">
-    <img src={lithiumbattery} height={200} width ={200} alt = 'Mppt charge controller'/>
+    <img src={lithiumbattery} height={200} width ={200} alt = 'Mppt charge controller' className='rounded float-start'/>
     </div>
     <div class="col">
-    <img src={chargecontroller} height={200} width ={200} alt = 'Mppt charge controller'/>
+    <img src={chargecontroller} height={200} width ={200} alt = 'Mppt charge controller' className='rounded float-start'/>
     </div>
   </div>
   <div class="row align-items-center">
     <div class="col">
-    <img src={powerhybrid} height ={200} width ={200} alt = "powerhybrid"/>
+    <img src={powerhybrid} height ={200} width ={200} alt = "powerhybrid" className='rounded float-start'/>
 
     </div>
     <div class="col">
-    <img src={smartmpptsolarcharger} height ={200} width ={200} alt = "powerhybrid"/>
+    <img src={smartmpptsolarcharger} height ={200} width ={200} alt = "powerhybrid" className='rounded float-start'/>
     </div>
     <div class="col">
-    <img src ={xtrapowerMPPT} height={200} width ={200} alt="xtrapowerMPPT"/>
+    <img src ={xtrapowerMPPT} height={200} width ={200} alt="xtrapowerMPPT" className='rounded float-start'/>
     </div>
   </div>
   <div class="row align-items-end">
-    <div class="col">
+    <div class="col" >
     <img src={LITHIUMBATTERY} height ={200} width ={200} alt ="LITHIUMBATTERY"/>
     </div>
     <div class="col">
-    <img src ={xtrapower} height ={200} width ={200} alt ="xtrapower"/>
+    <img src ={xtrapower} height ={200} width ={200} alt ="xtrapower" className='rounded float-start'/>
     </div>
-    <div class="col">
-    <img src={lithiumbattery} height = {200} width ={200} alt = 'lithiumbattery'/>
+    <div class="col" >
+    <img src={lithiumbattery} height = {200} width ={200} alt = 'lithiumbattery' className='rounded float-start'/>
     </div>
   </div>
 </div>
