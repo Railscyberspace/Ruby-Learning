@@ -22,9 +22,13 @@ function App() {
     <div className='logo-header'>
       <img  className = 'logo' src =  {logo} alt ='logo'/> 
       </div>
-      <div className='nav-link'>
-        <Link to ="home" className ="nav-item">Home</Link>
-        <Link to ="contact" className ="nav-item">About Us</Link>
+      <form class="d-flex push" role="search">
+          <input className="form-control me-2 fill" type="search" placeholder="Search" aria-label="Search"/>
+          <button  className="btn btn-light" type="submit">Search</button>
+        </form>
+      <div className='nav-link  container-fluid' >
+        <Link to ="home" className ="nav-item space">Home</Link>
+        <Link to ="contact" className ="nav-item">About</Link>
         <Link to ="login" className ="nav-item">Login</Link>
         <Link to ="signup" className ="nav-item">SignUp</Link>
         <Link to ="logout" className ="nav-item">LogOut</Link>
