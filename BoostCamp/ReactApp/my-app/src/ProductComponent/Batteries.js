@@ -14,9 +14,9 @@ function Battery(){
         <div class="container text-center">
              <div class="row align-items-start">
                    <div class="col">      
-            <div class="card" width={18} height={18}>
-                <div class="card-body">
-                <img src ={inverterbattery200} height ={200} width ={200} alt="dry Gell battery"/>
+                      <div class="card" width={18} height={18}>
+                    <div class="card-body">
+                    <img src ={inverterbattery200} height ={200} width ={200} alt="dry Gell battery"/>
                     <h5 class="card-title">Exide Tubular Battery</h5>
                     <h6 class="card-subtitle mb-2 text-muted">220AH 12V Tubular Battery</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -26,7 +26,7 @@ function Battery(){
             </div>
          </div>
             <div class="col">
-            <div class="card" width={18} height={18} >
+            <div class="card" width={5} height={5} >
             <div class="card-body">
                 <img src ={luminusgreentubular}  height ={200} width ={200} alt ="Tubular battery"/> 
                     <h5 class="card-title">Luminus 200AH tubular</h5>
