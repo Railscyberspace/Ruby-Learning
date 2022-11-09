@@ -12,6 +12,7 @@ import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
+import  th  from './Images/th.jpeg';
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
     <div className='logo-header'>
       <img  className = 'logo' src =  {logo} alt ='logo'/> 
       </div>
-      <form class="d-flex push" role="search">
-          <input className="form-control me-2 fill" type="search" placeholder="Search" aria-label="Search"/>
-          <button  className="btn btn-light" type="submit">Search</button>
+      <form class="d-flex push container" role="search">
+         <img  className='icon' src={th} height={50} width={50} alt ="search icon"/>
+          <input className="form-control me-2 fill searchbox" id = "search" type="search" placeholder="Search for your items here......" aria-label="Search"/>
+          <button  className='searchbutton'  value="search" type="submit">Search</button>
         </form>
       <div className='nav-link  container-fluid' >
         <Link to ="home" className ="nav-item space">Home</Link>

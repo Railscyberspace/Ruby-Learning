@@ -48,3 +48,36 @@
     text-align: center;
     display: block
 }
+
+.icon{
+    padding: 0.5rem;
+   
+}
+
+.d-flex .push.container{
+display: inline-flex;
+flex: 1 1 30px;
+border-radius: 10px;
+border: 1px #000;
+overflow: hidden;
+
+}
+
+.form-control .me-2 .fill.searchbox{
+  color: black;
+  background-color: #0f4a8a;
+  border: 0;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+#search{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button.searchbutton{
+border: 0;
+flex: 1;
+border-radius: 10px;
+}  
