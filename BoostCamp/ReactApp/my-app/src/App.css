@@ -2,11 +2,13 @@
 * {
   font-family: sans-serif;
   margin: 0px;
+  padding: 0;
 }
 nav {
   background: tomato;
   text-align: left;
   display: flex;
+ justify-content: stretch;
 
 }
 nav a {

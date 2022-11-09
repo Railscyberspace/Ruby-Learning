@@ -44,19 +44,18 @@
     width: 100%;
 }
 
-.nav-item.sapce{
+/* .nav-item.sapce{
     text-align: center;
     display: block
-}
+} */
 
 .icon{
-    padding: 0.5rem;
-   
+    padding: 0.8rem;
 }
 
 .d-flex .push.container{
 display: inline-flex;
-flex: 1 1 30px;
+flex: 1 1 300px;
 border-radius: 10px;
 border: 1px #000;
 overflow: hidden;

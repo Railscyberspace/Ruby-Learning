@@ -12,17 +12,18 @@ import VimINverter48v from '../Images/VimINverter48v.png';
 import Proton24V from '../Images/Proton24V.png';
 import ProtonHybrid48v from '../Images/ProtonHybrid48v.png';
 import ProtonHyrbrid48v from '../Images/ProtonHyrbrid48v.jpeg';
+import '../StyleComponent/Batteries.css';
 
 
 
 function Inverters(){
     return(
 <div>
-<div class="container text-center">
-  <div class="row align-items-start">
-    <div class="col"> 
+<div class="container text-center batteries">
+  <div class="row align-items-start ">
+    <div class="col head"> 
         <div class="card" width={18}>
-        <img src= { inverter5kvapc} height={200} width ={200} alt = "Hybrid inveter" className='rounded float-start'/>
+        <img className ="items" src= { inverter5kvapc} height={200} width ={200} alt = "Hybrid inveter" />
         <div class="card-body">
             <h5 class="card-title">xtrapower Hybrid</h5>
             <h6 class="card-subtitle mb-2 text-muted">5kva 48v</h6>
@@ -34,7 +35,7 @@ function Inverters(){
     </div>
     <div class="col">
             <div class="card" width={18}>
-            <img src={lithiumbattery} height={200} width ={200} alt = 'Mppt charge controller' className='rounded float-start'/>
+            <img  className = "items"src={lithiumbattery} height={200} width ={200} alt = 'Mppt charge controller' />
             <div class="card-body">
                 <h5 class="card-title">xtrapower Hybrid </h5>
                 <h6 class="card-subtitle mb-2 text-muted">7.5kva 48v</h6>
@@ -44,9 +45,9 @@ function Inverters(){
             </div>
             </div>
     </div>
-    <div class="col">
+    <div class="col head">
             <div class="card" width={18}>
-            <img src={chargecontroller} height={200} width ={200} alt = 'Mppt charge controller' className='rounded float-start'/>
+            <img className = "items" src={chargecontroller} height={200} width ={200} alt = 'Mppt charge controller' />
             <div class="card-body">
                 <h5 class="card-title">xtrapower charge controller</h5>
                 <h6 class="card-subtitle mb-2 text-muted">12v-48v 70A </h6>
@@ -58,9 +59,9 @@ function Inverters(){
     </div>
   </div>
   <div class="row align-items-center">
-    <div class="col">
+    <div class="col head">
              <div class="card" width={18}>
-             <img src={powerhybrid} height ={200} width ={200} alt = "powerhybrid" className='rounded float-start'/>
+             <img className='items' src={powerhybrid} height ={200} width ={200} alt = "powerhybrid"/>
             <div class="card-body">
                 <h5 class="card-title">xtrapower Hybrid series</h5>
                 <h6 class="card-subtitle mb-2 text-muted">4kva 48v</h6>
@@ -70,9 +71,9 @@ function Inverters(){
             </div>
             </div>
     </div>
-    <div class="col">
+    <div class="col head">
             <div class="card" width={18} >
-            <img src={smartmpptsolarcharger} height ={200} width ={200} alt = "powerhybrid" className='rounded float-start'/>
+            <img className='items' src={smartmpptsolarcharger} height ={200} width ={200} alt = "powerhybrid"/>
             <div class="card-body">
                 <h5 class="card-title">xtrapower chargecontroller </h5>
                 <h6 class="card-subtitle mb-2 text-muted">96v-300v 100A series</h6>
@@ -82,9 +83,9 @@ function Inverters(){
             </div>
             </div>
         </div>
-        <div class="col">
+        <div class="col head">
         <div class="card" width={18}>
-                <img src ={xtrapowerMPPT} height={200} width ={200} alt="xtrapowerMPPT" className='rounded float-start'/>
+                <img className='items' src ={xtrapowerMPPT} height={200} width ={200} alt="xtrapowerMPPT" />
                    <div class="card-body">
                       <h5 class="card-title">xtrapower touch screen chargecontroller</h5>
                           <h6 class="card-subtitle mb-2 text-muted">48v 100A touch screen series</h6>
@@ -96,9 +97,9 @@ function Inverters(){
         </div>
   </div>
   <div class="row align-items-end">
-    <div class="col" >
+    <div class="col head">
             <div class="card" width={18}>
-            <img src={lithiumbatteries} height ={200} width ={200} alt ="Lithium battery"/>
+            <img className='items' src={lithiumbatteries} height ={200} width ={200} alt ="Lithium battery"/>
                 <div class="card-body">
                 <h5 class="card-title">Lithium Batteries</h5>
                 <h6 class="card-subtitle mb-2 text-muted">5.5kwh 25.5v</h6>
@@ -120,9 +121,9 @@ function Inverters(){
             </div>
          </div>
         </div>
-        <div class="col" >
+        <div class="col head">
         <div class="card" width={18}>
-        <img src={lithiumbattery} height = {200} width ={200} alt = 'lithiumbattery' className='rounded float-start'/>
+        <img className ="items" src={lithiumbattery} height = {200} width ={200} alt = 'lithiumbattery' />
                 <div class="card-body">
                     <h5 class="card-title">Hybide Inverter</h5>
                     <h6 class="card-subtitle mb-2 text-muted">5kva 48v series</h6>
@@ -135,9 +136,9 @@ function Inverters(){
   </div>
 
   <div class="row align-items-center">
-    <div class="col">
+    <div class="col head">
                 <div class="card" width={18}>
-                <img src ={Crown48v} height ={200} width ={200} alt="Crown 48v Inverter"/>
+                <img className='items' src ={Crown48v} height ={200} width ={200} alt="Crown 48v Inverter"/>
                <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -147,9 +148,9 @@ function Inverters(){
             </div>
             </div>
     </div>
-    <div class="col">
+    <div class="col head">
             <div class="card" width={18}>
-            <img src ={femicareInverter48v}  height ={200} width ={200} alt ="Crown 48v 5kva Inverter"/> 
+            <img className='items' src ={femicareInverter48v}  height ={200} width ={200} alt ="Crown 48v 5kva Inverter"/> 
             <div class="card-body">
                 <h5 class="card-title">Femcare Inverter</h5>
                 <h6 class="card-subtitle mb-2 text-muted">24v-48v 2.5kva </h6>
@@ -159,9 +160,9 @@ function Inverters(){
             </div>
             </div>
     </div>
-    <div class="col">
+    <div class="col head">
             <div class="card" width={18}>
-            <img src={VimINverter48v} height={200} width ={200} alt = 'femicare Inverter 48v 3.5kva'/> 
+            <img className='items' src={VimINverter48v} height={200} width ={200} alt = 'femicare Inverter 48v 3.5kva'/> 
             <div class="card-body">
                 <h5 class="card-title">Vim Solar generator</h5>
                 <h6 class="card-subtitle mb-2 text-muted">600Watts series</h6>
@@ -173,9 +174,9 @@ function Inverters(){
      </div>
 </div>
 <div class="row align-items-end">
-            <div class="col">
+            <div class="col head">
             <div class="card" width={18}>
-                <img src={Proton24V} height={200} width ={200} alt = "Proton hyride inverter"/>
+                <img className='items' src={Proton24V} height={200} width ={200} alt = "Proton hyride inverter"/>
             <div class="card-body">
                 <h5 class="card-title">Proton Hybide Inverter</h5>
                 <h6 class="card-subtitle mb-2 text-muted">24v 2.5kva series</h6>
@@ -185,9 +186,9 @@ function Inverters(){
             </div>
             </div>
           </div>
-    <div class="col">
+    <div class="col head">
     <div class="card" width={18}>
-        <img src ={ProtonHybrid48v} height={200} width={200} alt ="proton Hybrid inverter series"/>
+        <img className='items' src ={ProtonHybrid48v} height={200} width={200} alt ="proton Hybrid inverter series"/>
           <div class="card-body">
             <h5 class="card-title">Proton Hybide series </h5>
             <h6 class="card-subtitle mb-2 text-muted">5kva 48v series</h6>
@@ -197,9 +198,9 @@ function Inverters(){
         </div>
         </div>
     </div>
-    <div class="col">
+    <div class="col head">
                 <div class="card" width={18}>
-                    <img src ={ProtonHyrbrid48v} height={200} width={200} alt ="Hybide series inverter"/>
+                    <img className='items' src ={ProtonHyrbrid48v} height={200} width={200} alt ="Hybide series inverter"/>
                 <div class="card-body">
                     <h5 class="card-title">Proton Hybide series</h5>
                     <h6 class="card-subtitle mb-2 text-muted">5kva - 10kva 48v</h6>
