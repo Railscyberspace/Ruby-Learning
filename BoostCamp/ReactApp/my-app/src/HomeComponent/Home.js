@@ -5,14 +5,7 @@
             <body>
             <header className="header">
               <h1 className="header-primary">Elec solutions</h1>
-      
           </header>
-
-
-
-
-
-
             </body>
          
         </div>
