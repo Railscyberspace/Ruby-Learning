@@ -3,9 +3,17 @@
     return(
         <div>
             <body>
-            <header className="header">
-              <h1 className="header-primary">Elec solutions</h1>
-          </header>
+              <header className="header">
+            <div className="text-box">  
+                <h1 className="header-primary">
+                <span className="heading-primary-main"> Elec solutions </span>
+                <span className="heading-secondary-sub">Quality service our hobby</span>
+                </h1>
+              </div>
+           </header>
+
+      
+          
             </body>
          
         </div>

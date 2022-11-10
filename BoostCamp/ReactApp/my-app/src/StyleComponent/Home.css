@@ -21,3 +21,33 @@ body{
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
 }
+
+.header-primary{
+    color: #000;
+    text-transform: capitalize;
+   
+}
+
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 35px;
+
+}
+
+.heading-secondary-sub{
+    display: block;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 17px;
+
+}
