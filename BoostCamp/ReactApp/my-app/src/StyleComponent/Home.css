@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-weight: sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ee9972;;
+}
+
+.header{
+  height:  100vh;
+  background-image:linear-gradient(to right bottom, rgba(255, 99,71, 0.9 ), rgba(255, 75, 75, 0.1)),url('../Images/Logo/header.jpeg');
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}

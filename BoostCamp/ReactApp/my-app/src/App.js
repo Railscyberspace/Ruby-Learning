@@ -1,5 +1,6 @@
 
 import './App.css';
+import './StyleComponent/Home.css';
 import './StyleComponent/Logo.css';
 import Contact from './HomeComponent/Contact';
 import Home from './HomeComponent/Home';
