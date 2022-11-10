@@ -1,4 +1,5 @@
-
+// import {Link, Route, Routes} from 'react-router-dom';
+// import Inverters  from '../ProductComponent/Inverters';
  function Home(){
     return(
         <div>
@@ -12,7 +13,11 @@
               </div>
            </header>
 
-      
+          
+           
+         
+
+       
           
             </body>
          

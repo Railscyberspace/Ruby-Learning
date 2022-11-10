@@ -3,12 +3,12 @@ import './App.css';
 import './StyleComponent/Home.css';
 import './StyleComponent/Logo.css';
 import Contact from './HomeComponent/Contact';
-import Home from './HomeComponent/Home';
 import Login from './HomeComponent/Login';
 import SignUp from './HomeComponent/SignUp';
 import LogOut from './HomeComponent/LogOut';
 import {Routes, Route, Link } from 'react-router-dom';
 // import Calculator from './HomeComponent/Calculator';
+import Home from './HomeComponent/Home';
 import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
@@ -24,13 +24,14 @@ function App() {
     <div className='logo-header'>
       <img  className = 'logo' src =  {logo} alt ='logo'/> 
       </div>
+  
       <form class="d-flex push container" role="search">
          <img  className='icon' src={th} height={50} width={50} alt ="search icon"/>
           <input className="form-control me-2 fill searchbox" id = "search" type="search" placeholder="Search for your items here......" aria-label="Search"/>
           <button  className='searchbutton'  value="search" type="submit">Search</button>
         </form>
       <div className='nav-link  container-fluid' >
-        <Link to ="home" className ="nav-item space">Home</Link>
+  
         <Link to ="contact" className ="nav-item">About</Link>
         <Link to ="login" className ="nav-item">Login</Link>
         <Link to ="signup" className ="nav-item">SignUp</Link>
@@ -43,16 +44,14 @@ function App() {
       <Routes>
         {/* <Route path='/calculator' element={<Calculator/>}></Route> */}
         <Route path ="/contact" element ={<Contact/>}></Route>
-        <Route path ="/home" element ={<Home/>}></Route>
         <Route path ="/login" element ={<Login/>}></Route>
         <Route path ="/signUp" element ={<SignUp/>}></Route>
         <Route path ="/logout" element ={<LogOut/>}></Route>
         <Route path='/inverters' element={<Inverters/>}></Route>
         <Route path='/batteries' element={<Batteries/>}></Route>
       </Routes>
-
     </header>
-    
+    <Home/>
     </div>
   );
 }
