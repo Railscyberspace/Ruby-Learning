@@ -7,13 +7,13 @@ import Login from './HomeComponent/Login';
 import SignUp from './HomeComponent/SignUp';
 import LogOut from './HomeComponent/LogOut';
 import {Routes, Route, Link } from 'react-router-dom';
-// import Calculator from './HomeComponent/Calculator';
 import Home from './HomeComponent/Home';
 import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
 import  th  from './Images/th.jpeg';
+
 
 function App() {
   return (
@@ -31,18 +31,15 @@ function App() {
           <button  className='searchbutton'  value="search" type="submit">Search</button>
         </form>
       <div className='nav-link  container-fluid' >
-  
-        <Link to ="contact" className ="nav-item">About</Link>
         <Link to ="login" className ="nav-item">Login</Link>
         <Link to ="signup" className ="nav-item">SignUp</Link>
         <Link to ="logout" className ="nav-item">LogOut</Link>
-        {/* <Link to = "calculator" className='nav-item'>Calculator</Link> */}
         <Link to ="inverters" className='nav-item'>Inverters</Link>
         <Link to = "batteries" className = 'nav-item'>Batteries</Link>
       </div>     
   </nav>
       <Routes>
-        {/* <Route path='/calculator' element={<Calculator/>}></Route> */}
+       <Route path ="/" element ={<Home/>}></Route>
         <Route path ="/contact" element ={<Contact/>}></Route>
         <Route path ="/login" element ={<Login/>}></Route>
         <Route path ="/signUp" element ={<SignUp/>}></Route>
@@ -51,9 +48,8 @@ function App() {
         <Route path='/batteries' element={<Batteries/>}></Route>
       </Routes>
     </header>
-    <Home/>
+     {/* <Home/>  */}
     </div>
   );
 }
-
 export default App;
