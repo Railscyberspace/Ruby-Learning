@@ -3,7 +3,9 @@
   font-family: sans-serif;
   margin: 0px;
   padding: 0;
+  box-sizing: border-box;
 }
+
 nav {
   background: tomato;
   text-align: left;
@@ -11,6 +13,7 @@ nav {
  justify-content: stretch;
  position: relative;
 }
+
 nav a {
   color: #fff;
   text-decoration: none;

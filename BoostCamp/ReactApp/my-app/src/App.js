@@ -12,7 +12,7 @@ import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
-import  th  from './Images/th.jpeg';
+// import  th  from './Images/th.jpeg';
 
 
 function App() {
@@ -22,15 +22,15 @@ function App() {
      
   <nav className='nav-bar'>
     <div className='logo-header'>
-      <img  className = 'logo' src =  {logo} alt ='logo'/> 
+      <img  className = 'logo' src =  {logo} alt ='logo'/>
       </div>
   
       <form class="d-flex push container" role="search">
-         <img  className='icon' src={th} height={50} width={50} alt ="search icon"/>
+         {/* <img  className='icon' src={th} height={50} width={50} alt ="search icon"/> */}
           <input className="form-control me-2 fill searchbox" id = "search" type="search" placeholder="Search for your items here......" aria-label="Search"/>
           <button  className='searchbutton'  value="search" type="submit">Search</button>
         </form>
-      <div className='nav-link  container-fluid' >
+      <div className='nav-link  container-fluid'>
         <Link to ="login" className ="nav-item">Login</Link>
         <Link to ="signup" className ="nav-item">SignUp</Link>
         <Link to ="logout" className ="nav-item">LogOut</Link>
@@ -48,7 +48,6 @@ function App() {
         <Route path='/batteries' element={<Batteries/>}></Route>
       </Routes>
     </header>
-     {/* <Home/>  */}
     </div>
   );
 }
