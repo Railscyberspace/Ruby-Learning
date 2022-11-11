@@ -21,6 +21,7 @@ body{
     color: #fff;
     text-transform: capitalize;
     backface-visibility: hidden;
+    margin-bottom: 60px;
    
 }
 
@@ -29,6 +30,8 @@ body{
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+
     
 }
 
@@ -92,3 +95,28 @@ body{
 }
 
 
+.buttoning{
+    border-radius: 10px;
+    border: solid 1.5px rgba(255, 99, 71, 0.7);
+    background: #fff;
+    display: inline-flex;
+}
+
+.btn:link, .btn:visited{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 12px;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(255, 255 ,255);
+}
+
+
+.btn:active{
+    transform: translateY(-1px);
+}
+Link.btn-white{
+ 
+}

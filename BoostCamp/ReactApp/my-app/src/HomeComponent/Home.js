@@ -1,4 +1,7 @@
 // import {Link, Route, Routes} from 'react-router-dom';
+
+import { Link } from "react-router-dom";
+
 // import Inverters  from '../ProductComponent/Inverters';
  function Home(){
     return(
@@ -10,15 +13,11 @@
                 <span className="heading-primary-main"> Elec solutions </span>
                 <span className="heading-secondary-sub">Quality service our hobby</span>
                 </h1>
-              </div>
+                <div className="buttoning">
+                     <Link to ="inverters" className="btn btn-white">Discover our products</Link> 
+                </div>   
+            </div>
            </header>
-
-          
-           
-         
-
-       
-          
             </body>
          
         </div>
