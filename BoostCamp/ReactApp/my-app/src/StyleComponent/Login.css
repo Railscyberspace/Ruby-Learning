@@ -78,5 +78,15 @@ button.searchbutton{
     background: #fff;
     display: inline-flex;
     color: rgb(0,0,0);
+    /* box-shadow: px 2px 2px rgb(255, 255, 240); */
 
-}  
+}  button.searchbutton:active{
+  transform: translateY(-1px);
+
+}
+
+button.searchbutton:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgb(255, 255 ,255);
+}
+
