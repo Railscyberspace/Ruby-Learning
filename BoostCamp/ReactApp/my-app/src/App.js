@@ -2,6 +2,7 @@
 import './App.css';
 import './StyleComponent/Home.css';
 import './StyleComponent/Logo.css';
+import './StyleComponent/Nav.css';
 import Contact from './HomeComponent/Contact';
 import Login from './HomeComponent/Login';
 import SignUp from './HomeComponent/SignUp';

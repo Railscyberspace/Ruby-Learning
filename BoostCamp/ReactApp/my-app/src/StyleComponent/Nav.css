@@ -1,0 +1,115 @@
+
+nav {
+    background: tomato;
+    text-align: center;
+    display: flex;
+  
+  }
+  
+  div.nav-link{
+    position:relative;
+    justify-content: stretch;
+    margin-top: 15px;
+  }
+  
+  .nav-item{
+      border-radius: 10px;
+      border: solid 1.5px rgba(255, 99, 71, 0.7);
+      background: rgb(255, 255, 255);
+      display: inline-flex;
+      color: rgb(0,0,0);
+      font-family: sans-serif;
+      text-transform: capitalize;
+      margin-right:18px;  
+      font-weight:550;
+      font-size: 19px;
+  }
+  
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .nav-item:active{
+    transform: translateY(-1px);
+  }
+  
+  .nav-item:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(255, 255 ,255);
+    color: rgb(255, 99, 71);
+  }
+  
+  header{
+    display: grid;
+  
+  }
+  
+  .nav-item{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #search{
+    text-align: left;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+button.searchbutton{
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 10px;
+    border: solid 1.9px rgba(255, 99, 71, 0.7);
+    background: rgb(255, 255, 255);
+    display: inline-flex;
+    color: rgb(0,0,0);
+     box-shadow: 1px 2px 2px rgb(255, 255, 240); 
+
+} 
+
+ button.searchbutton:active{
+  transform: translateY(-1px);
+
+}
+
+button.searchbutton:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgb(255, 255 ,255);
+}
+
+
+  .btn:nth-last-child(3){
+    background-color: bisque;
+  }
+  
+  .btn:nth-last-child(4){
+    background-color: cornflowerblue;
+  }
+  .btn:nth-last-child(5){
+    background-color: hotpink;
+  }
+  
+  input {
+  
+    margin-bottom: 20px;
+  }
+  
+  button {
+    border: 1px solid gray;
+    background: whitesmoke;
+    margin-right: 5px;
+  }
+  
+  button:nth-last-child(2){
+    background-color:crimson;
+  }
+  
+  /* button:nth-last-child(1) {
+    background: tomato;
+    color: white;
+  } */
+  

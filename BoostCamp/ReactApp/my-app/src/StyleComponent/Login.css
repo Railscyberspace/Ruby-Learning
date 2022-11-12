@@ -67,26 +67,4 @@ overflow: hidden;
   padding: 0.8rem;
 } */
 
-#search{
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-button.searchbutton{
-    border-radius: 10px;
-    border: solid 1.9px rgba(255, 99, 71, 0.7);
-    background: #fff;
-    display: inline-flex;
-    color: rgb(0,0,0);
-    /* box-shadow: px 2px 2px rgb(255, 255, 240); */
-
-}  button.searchbutton:active{
-  transform: translateY(-1px);
-
-}
-
-button.searchbutton:hover{
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgb(255, 255 ,255);
-}
 
