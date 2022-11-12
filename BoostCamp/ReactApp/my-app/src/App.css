@@ -13,6 +13,14 @@ nav {
  justify-content: stretch;
  position: relative;
 }
+.nav-item{
+    border-radius: 10px;
+    border: solid 1.5px rgba(255, 99, 71, 0.7);
+    background: #fff;
+    display: inline-flex;
+    color: rgb(0,0,0);
+    font-family: sans-serif;
+}
 
 nav a {
   color: #fff;
@@ -20,6 +28,15 @@ nav a {
   font-size: 20px;
   margin-right: 20px;
   text-align: center;
+}
+.nav-item:active{
+  transform: translateY(-1px);
+}
+
+.nav-item:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgb(255, 255 ,255);
+  color: rgb(255, 99, 71);
 }
 
 header{

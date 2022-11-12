@@ -52,8 +52,6 @@ body{
     animation-name:moveInRight;
     animation-duration: 3s;
     animation-timing-function: ease-in;
-    
-
 }
 
 @keyframes moveInLeft{
@@ -74,7 +72,6 @@ body{
 
     }
 }
-
 
 @keyframes moveInRight {
 
@@ -117,6 +114,6 @@ body{
 .btn:active{
     transform: translateY(-1px);
 }
-Link.btn-white{
+/* Link.btn-white{
  
-}
+} */
