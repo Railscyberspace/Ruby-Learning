@@ -102,7 +102,8 @@ body{
     display: inline-flex;
 }
 
-.btn:link, .btn:visited{
+.btn:link, 
+.btn:visited{
     text-decoration: none;
     text-transform: capitalize;
     padding: 10px 12px;
