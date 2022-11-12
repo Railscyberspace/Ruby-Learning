@@ -62,13 +62,10 @@ overflow: hidden;
 
 }
 
-.form-control .me-2 .fill.searchbox{
-  color: black;
-  background-color: #0f4a8a;
+/* .form-control .me-2 .fill.searchbox{
   border: 0;
   padding: 0.8rem;
-  border-radius: 5px;
-}
+} */
 
 #search{
     text-align: left;
@@ -76,7 +73,10 @@ overflow: hidden;
 }
 
 button.searchbutton{
-border: 0;
-flex: 1;
-border-radius: 10px;
+    border-radius: 10px;
+    border: solid 1.9px rgba(255, 99, 71, 0.7);
+    background: #fff;
+    display: inline-flex;
+    color: rgb(0,0,0);
+
 }  
