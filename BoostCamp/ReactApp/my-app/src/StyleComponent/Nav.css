@@ -13,6 +13,7 @@ nav {
   }
   
   .nav-item{
+     font-family: 'Courier New', Courier, monospace;
       border-radius: 10px;
       border: solid 1.5px rgba(255, 99, 71, 0.7);
       background: rgb(255, 255, 255);
@@ -21,8 +22,9 @@ nav {
       font-family: sans-serif;
       text-transform: capitalize;
       margin-right:18px;  
-      font-weight:550;
+      font-weight:600;
       font-size: 19px;
+      justify-content: stretch;
   }
   
 
@@ -48,16 +50,18 @@ nav {
     display: grid;
   
   }
-  
-  .nav-item{
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
+
   #search{
     text-align: left;
     font-family:'Courier New', Courier, monospace;
     font-weight: 600;
 }
+
+/* .push.container{
+    justify-content: stretch;
+    text-align: center;
+} */
+
 
 button.searchbutton{
     font-weight: 600;
@@ -67,7 +71,8 @@ button.searchbutton{
     background: rgb(255, 255, 255);
     display: inline-flex;
     color: rgb(0,0,0);
-     box-shadow: 1px 2px 2px rgb(255, 255, 240); 
+    box-shadow: 1px 2px 2px rgb(255, 255, 240); 
+    
 
 } 
 
