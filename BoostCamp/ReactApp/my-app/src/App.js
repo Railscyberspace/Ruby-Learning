@@ -1,8 +1,8 @@
 
-import './App.css';
-import './StyleComponent/Home.css';
-import './StyleComponent/Logo.css';
-import './StyleComponent/Nav.css';
+import './App.scss';
+import './StyleComponent/Home.scss';
+import './StyleComponent/Logo.scss';
+import './StyleComponent/Nav.scss';
 import Contact from './HomeComponent/Contact';
 import Login from './HomeComponent/Login';
 import SignUp from './HomeComponent/SignUp';

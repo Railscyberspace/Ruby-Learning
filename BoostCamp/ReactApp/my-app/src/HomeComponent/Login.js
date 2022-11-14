@@ -1,4 +1,4 @@
-import '../StyleComponent/Login.css';
+import '../StyleComponent/Login.scss';
 
 import {useState} from 'react';
 function Login(){  

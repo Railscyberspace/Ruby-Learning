@@ -69,7 +69,7 @@ nav {
 } */
 
 
-button.searchbutton{
+.searchbutton{
     font-weight: 600;
     font-size: 22px;
     border-radius: 10px;
@@ -109,18 +109,7 @@ button.searchbutton:hover{
     margin-bottom: 20px;
   }
   
-  button {
-    border: 1px solid gray;
-    background: whitesmoke;
-    margin-right: 5px;
-  }
-  
   button:nth-last-child(2){
     background-color:crimson;
   }
-  
-  /* button:nth-last-child(1) {
-    background: tomato;
-    color: white;
-  } */
-  
+ 

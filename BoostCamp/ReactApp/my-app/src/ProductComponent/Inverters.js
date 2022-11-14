@@ -12,7 +12,8 @@ import VimINverter48v from '../Images/VimINverter48v.png';
 import Proton24V from '../Images/Proton24V.png';
 import ProtonHybrid48v from '../Images/ProtonHybrid48v.png';
 import ProtonHyrbrid48v from '../Images/ProtonHyrbrid48v.jpeg';
-import '../StyleComponent/Batteries.css';
+import '../StyleComponent/Batteries.scss';
+import  '../StyleComponent/inverter.scss';
 
 
 

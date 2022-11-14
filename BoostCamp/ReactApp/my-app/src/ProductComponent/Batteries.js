@@ -1,4 +1,5 @@
-import '../StyleComponent/Batteries.css';
+import '../StyleComponent/Batteries.scss';
+import  '../StyleComponent/inverter.scss';
 import inverterbattery200 from '../Batteries/inverterbattery200.jpg';
 import luminusgreentubular from '../Batteries/luminusgreentubular.jpeg';
 import eastman200 from '../Batteries/eastman200.jpg';
@@ -24,13 +25,18 @@ function Battery(){
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <span className='butt-money'>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
+                    <div className='sub-add'> 
+                    <button className='sub'>-</button>
+                    <div className='space'>|</div>
+                    <button className='add'>+</button>
+                    </div>
             </div>
             </div>
          </div>
             <div class="col head">
             <div class="card" width={5} height={5} >
             <div class="card-body">
-                <img className='items' src ={luminusgreentubular}  height ={200} width ={200} alt ="Tubular battery"/> 
+                <img className='items' src = {luminusgreentubular}  height ={200} width ={200} alt ="Tubular battery"/> 
                     <h5 class="card-title">Luminus 200AH tubular</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Luminus 12v tubular battery</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
