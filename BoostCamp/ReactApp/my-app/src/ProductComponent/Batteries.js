@@ -22,7 +22,7 @@ function Battery(){
                     <h5 class="card-title">Exide Tubular Battery</h5>
                     <h6 class="card-subtitle mb-2 text-muted">220AH 12V Tubular Battery</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span>N580,000.00</span>
+                    <span className='butt-money'>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -34,7 +34,7 @@ function Battery(){
                     <h5 class="card-title">Luminus 200AH tubular</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Luminus 12v tubular battery</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span>N650,000.00</span>
+                    <span className='butt-money'>N650,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
                 </div>
                </div>
@@ -46,7 +46,7 @@ function Battery(){
                     <h5 class="card-title">Eastman 200AH series</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Eastman 12v series</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span>N950,000.00</span>
+                    <span  className='butt-money'>N950,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
              </div>
             </div>
@@ -59,7 +59,7 @@ function Battery(){
                     <h5 class="card-title">Luminus Inverter 200AH</h5>
                     <h6 class="card-subtitle mb-2 text-muted">12v Unique design </h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span>N650,000.00</span>
+                    <span className='butt-money'>N650,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
                 </div>
                 </div>         
@@ -71,7 +71,7 @@ function Battery(){
                         <h5 class="card-title">Germany batteries series</h5>
                         <h6 class="card-subtitle mb-2 text-muted">12v 200AH battery series</h6>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <span>N650,000.00</span>
+                        <span className='butt-money'>N650,000.00</span>
                         <button type="button" class="btn btn-secondary">Add to Cart</button>
                     </div>
                     </div>
@@ -83,7 +83,7 @@ function Battery(){
                         <h5 class="card-title">Luguard Tubular series</h5>
                         <h6 class="card-subtitle mb-2 text-muted">12v 200AH Luguard Batteries</h6>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <span>N650,000.00</span>
+                        <span className='butt-money'>N650,000.00</span>
                         <button type="button" class="btn btn-secondary">Add to Cart</button>
                     </div>
                     </div>
@@ -97,7 +97,7 @@ function Battery(){
                         <h5 class="card-title">SF Sonic </h5>
                         <h6 class="card-subtitle mb-2 text-muted">220AH 12V Tubular</h6>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <span>N650,000.00</span>
+                        <span className='butt-money'>N650,000.00</span>
                         <button type="button" class="btn btn-secondary">Add to Cart</button>
                     </div>
                     </div>
@@ -109,7 +109,7 @@ function Battery(){
                         <h5 class="card-title">Mtekbattery 150AH series</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Luminus 12v Battery</h6>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <span>N650,000.00</span>
+                        <span className='butt-money'>N650,000.00</span>
                        <button type="button" class="btn btn-secondary">Add to Cart</button>
                     </div>
                  </div>                 
@@ -121,7 +121,7 @@ function Battery(){
                                     <h5 class="card-title">Luminus Battery </h5>
                                     <h6 class="card-subtitle mb-2 text-muted">12V Inverter Battery</h6>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <span>N650,000.00</span>
+                                    <span className='butt-money'>N650,000.00</span>
                                     <button type="button" class="btn btn-secondary">Add to Cart</button>
                                 </div>
                             </div>

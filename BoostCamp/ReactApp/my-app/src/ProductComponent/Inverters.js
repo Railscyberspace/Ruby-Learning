@@ -28,7 +28,7 @@ function Inverters(){
             <h5 class="card-title">xtrapower Hybrid</h5>
             <h6 class="card-subtitle mb-2 text-muted">5kva 48v</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <span>N580,000.00</span>
+            <span className='butt-money'>N580,000.00</span>
             <button type="button" class="btn btn-secondary">Add to Cart</button>
         </div>
         </div>
@@ -40,7 +40,7 @@ function Inverters(){
                 <h5 class="card-title">xtrapower Hybrid </h5>
                 <h6 class="card-subtitle mb-2 text-muted">7.5kva 48v</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -52,7 +52,7 @@ function Inverters(){
                 <h5 class="card-title">xtrapower charge controller</h5>
                 <h6 class="card-subtitle mb-2 text-muted">12v-48v 70A </h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
         </div>
@@ -66,7 +66,7 @@ function Inverters(){
                 <h5 class="card-title">xtrapower Hybrid series</h5>
                 <h6 class="card-subtitle mb-2 text-muted">4kva 48v</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -78,7 +78,7 @@ function Inverters(){
                 <h5 class="card-title">xtrapower chargecontroller </h5>
                 <h6 class="card-subtitle mb-2 text-muted">96v-300v 100A series</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -90,7 +90,7 @@ function Inverters(){
                       <h5 class="card-title">xtrapower touch screen chargecontroller</h5>
                           <h6 class="card-subtitle mb-2 text-muted">48v 100A touch screen series</h6>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <span>N380,000.00</span>
+                          <span className='butt-money'>N380,000.00</span>
                           <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -104,7 +104,7 @@ function Inverters(){
                 <h5 class="card-title">Lithium Batteries</h5>
                 <h6 class="card-subtitle mb-2 text-muted">5.5kwh 25.5v</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
         </div>
         </div>
@@ -116,7 +116,7 @@ function Inverters(){
                     <h5 class="card-title">xtrapower Hybrid Inverter</h5>
                     <h6 class="card-subtitle mb-2 text-muted">3.5kva Hybide series 48v</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span>N580,000.00</span>
+                    <span className='butt-money'>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
          </div>
@@ -128,7 +128,7 @@ function Inverters(){
                     <h5 class="card-title">Hybide Inverter</h5>
                     <h6 class="card-subtitle mb-2 text-muted">5kva 48v series</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span>N580,000.00</span>
+                    <span className='butt-money'>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
                 </div>
        </div>
@@ -143,7 +143,7 @@ function Inverters(){
                 <h5 class="card-title">Card title</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -155,7 +155,7 @@ function Inverters(){
                 <h5 class="card-title">Femcare Inverter</h5>
                 <h6 class="card-subtitle mb-2 text-muted">24v-48v 2.5kva </h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -167,7 +167,7 @@ function Inverters(){
                 <h5 class="card-title">Vim Solar generator</h5>
                 <h6 class="card-subtitle mb-2 text-muted">600Watts series</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
          </div>
@@ -181,7 +181,7 @@ function Inverters(){
                 <h5 class="card-title">Proton Hybide Inverter</h5>
                 <h6 class="card-subtitle mb-2 text-muted">24v 2.5kva series</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <span>N580,000.00</span>
+                <span className='butt-money'>N580,000.00</span>
                 <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
             </div>
@@ -193,7 +193,7 @@ function Inverters(){
             <h5 class="card-title">Proton Hybide series </h5>
             <h6 class="card-subtitle mb-2 text-muted">5kva 48v series</h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <span>N580,000.00</span>
+            <span className='butt-money'>N580,000.00</span>
             <button type="button" class="btn btn-secondary">Add to Cart</button>
         </div>
         </div>
@@ -205,7 +205,7 @@ function Inverters(){
                     <h5 class="card-title">Proton Hybide series</h5>
                     <h6 class="card-subtitle mb-2 text-muted">5kva - 10kva 48v</h6>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <span>N580,000.00</span>
+                    <span className='butt-money'>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
             </div>
         </div>

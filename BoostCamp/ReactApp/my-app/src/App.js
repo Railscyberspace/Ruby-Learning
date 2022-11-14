@@ -38,6 +38,7 @@ function App() {
         <Link to = "batteries" className = 'nav-item'>Batteries</Link>
       </div>     
   </nav>
+  </header>
       <Routes>
        <Route path ="/" element ={<Home/>}></Route>
         <Route path ="/contact" element ={<Contact/>}></Route>
@@ -47,7 +48,7 @@ function App() {
         <Route path='/inverters' element={<Inverters/>}></Route>
         <Route path='/batteries' element={<Batteries/>}></Route>
       </Routes>
-    </header>
+ 
     </div>
   );
 }
