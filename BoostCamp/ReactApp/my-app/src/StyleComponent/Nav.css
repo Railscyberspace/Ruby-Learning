@@ -1,7 +1,11 @@
+.nav-bar{
+  max-width: 114rem;
+  
+}
+
 
 nav {
     background: tomato;
-    text-align: center;
     display: flex;
   
   }

@@ -19,8 +19,7 @@ import Batteries from './ProductComponent/Batteries';
 function App() {
   return (
     <div className="App">
-    <header>
-     
+  <header>
   <nav className='nav-bar'>
     <div className='logo-header'>
       <img  className = 'logo' src =  {logo} alt ='logo'/>
