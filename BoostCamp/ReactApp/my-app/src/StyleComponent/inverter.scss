@@ -1,20 +1,31 @@
 
 div.sub-add {
     display: inline-flex;
-    margin-left: 15px;
-}
-
+    margin-left: 20px;
+    
 div.space{
-    margin: 5px 5px;
+    margin: 15px 15px;
+    font-weight: 600;
 }
 
 button.add{
-    font-size: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(255, 99, 71);
+    border: solid 5px rgba(255, 99, 71, 0.7);
+    color: rgb(255, 255, 255);
 } 
 
- b.sub{
-       font-size: 20px;
+ button.sub{
+       font-size: 30px;
+       border-radius: 5px;
+       background-color: rgb(255, 99, 71);
+       border: solid 6px rgba(255, 99, 71, 0.7);
+       color: rgb(255, 255, 255);
+    }
+
+ button.add:hover,
+ .sub:hover{
+    color: rgb(0,0,0);
+ }
 }
-
-    
-
