@@ -26,9 +26,9 @@ function Battery(){
                     <span className='butt-money'>N580,000.00</span>
                     <button type="button" class="btn btn-secondary">Add to Cart</button>
                     <div className='sub-add'> 
-                    <button className='sub'>-</button>
+                    <button className='btn btn-secondary sub'>-</button>
                     <div className='space'>|</div>
-                    <button className='add'>+</button>
+                    <button className='btn btn-secondary add'>+</button>
                     </div>
             </div>
             </div>
