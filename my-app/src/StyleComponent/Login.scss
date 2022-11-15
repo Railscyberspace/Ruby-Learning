@@ -18,7 +18,7 @@
   background-color:white;
   border-radius: 20px;
   width: 50%;
-  min-height: 40vh;
+  min-height: 100%;
   padding: 0 50px;
   align-items: center;
   margin-bottom: 50px;
@@ -47,6 +47,7 @@ label{
 }
 
 .input-fill {
+  width: 100%;
   border: 1px solid#d0d0d0;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -54,6 +55,10 @@ label{
   border-color: #d0d0d0;
   color: white;
 } 
+
+.form-control.input-fill:focus{
+  box-shadow: none;
+}
 
 #place{
   font-weight: 600;
