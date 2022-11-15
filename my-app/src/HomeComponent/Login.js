@@ -12,7 +12,7 @@ function Login(){
              <div className='container login'>
                     <h2 className='head-text'>Create An Aaccount</h2>
                     <p className='welcome-text'>Enter your details to Register</p>
-                <div className="row g-3">
+                <div className="row">
                     <div className="col">
                         <label>firstname</label>
                         <input type="text" className="form-control input-fill" id = 'place'  placeholder="First name" aria-label="First name"/>
@@ -32,7 +32,7 @@ function Login(){
                     <input type="text" className="form-control input-fill"  id = 'place'  placeholder="Phone" aria-label="Last name"/>
                 </div>
            </div>
-           <div className="row g-3">
+           <div className="row">
                 <div className="col">
                 <label>State</label>
                     <input type="text" className="form-control input-fill"  id = 'place' placeholder="State" aria-label="First name"/>
@@ -42,7 +42,7 @@ function Login(){
                     <input type="text" className="form-control input-fill" id = 'place' placeholder="Local-Govt" aria-label="Last name"/>
                 </div>
            </div>
-           <div className="row g-3">
+           <div className="row ">
                 <div className="col">
                 <label>Password</label>
                     <input type="text" className="form-control input-fill" id = 'place'  placeholder="Password" aria-label="First name"/>
