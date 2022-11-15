@@ -7,47 +7,59 @@ function Login(){
     //     firstname:"",  lastName: '', Email: '', Password: ''
     // });
     return(
-        <div className="container form">
-            <div className='container'>
-            <div className="row g-3">
+        <div>
+          <div className='Register-container'>
+             <div className='container login'>
+                    <h2 className='head-text'>Create An Aaccount</h2>
+                    <p className='welcome-text'>Enter your details to Register</p>
+                <div className="row g-3">
+                    <div className="col">
+                        <label>firstname</label>
+                        <input type="text" className="form-control input-fill" id = 'place'  placeholder="First name" aria-label="First name"/>
+                    </div>
+                    <div className="col">
+                    <label>lastname</label>
+                        <input type="text" className="form-control input-fill" id = 'place' placeholder="Last name" aria-label="Last name"/>
+                    </div>
+            </div>
+           <div className="row g-3">
                 <div className="col">
-                    <input type="text" className="form-control" placeholder="First name" aria-label="First name"/>
+                <label>email</label>
+                    <input type="text" className="form-control input-fill "id = 'place' placeholder="Email" aria-label="First name"/>
                 </div>
                 <div className="col">
-                    <input type="text" className="form-control" placeholder="Last name" aria-label="Last name"/>
+                    <label>phone</label>
+                    <input type="text" className="form-control input-fill"  id = 'place'  placeholder="Phone" aria-label="Last name"/>
                 </div>
            </div>
            <div className="row g-3">
                 <div className="col">
-                    <input type="text" className="form-control" placeholder="Email" aria-label="First name"/>
+                <label>State</label>
+                    <input type="text" className="form-control input-fill"  id = 'place' placeholder="State" aria-label="First name"/>
                 </div>
                 <div className="col">
-                    <input type="text" className="form-control" placeholder="Phone" aria-label="Last name"/>
-                </div>
-           </div>
-           <div className="row g-3">
-                <div className="col">
-                    <input type="text" className="form-control" placeholder="State" aria-label="First name"/>
-                </div>
-                <div className="col">
-                    <input type="text" className="form-control" placeholder="Local-Govt" aria-label="Last name"/>
+                <label>local-Govt</label>
+                    <input type="text" className="form-control input-fill" id = 'place' placeholder="Local-Govt" aria-label="Last name"/>
                 </div>
            </div>
            <div className="row g-3">
                 <div className="col">
-                    <input type="text" className="form-control" placeholder="Password" aria-label="First name"/>
+                <label>Password</label>
+                    <input type="text" className="form-control input-fill" id = 'place'  placeholder="Password" aria-label="First name"/>
                 </div>
                 <div className="col">
-                    <input type="text" className="form-control" placeholder="Confirm Password" aria-label="Last name"/>
+                <label>confirm-password</label>
+                    <input type="text" className="form-control input-fill" id = 'place'  placeholder="Confirm Password" aria-label="Last name"/>
                 </div>
            </div>
-                <div className="col">
-                    <button type="submit" className="form-control" >Submit</button>
+                <div className="col submit">
+                    <button type="submit" className="btn btn-secondary btn-lg" >Submit</button>
                  </div>
             </div>
+        </div>
            
  
-        </div>
+    </div>
        
     );
 };
