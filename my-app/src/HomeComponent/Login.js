@@ -9,7 +9,7 @@ function Login(){
     return(
         <div>
           <div className='Register-container'>
-             <div className='container login'>
+             <div className='container-login'>
                     <h2 className='head-text'>Create An Aaccount</h2>
                     <p className='welcome-text'>Enter your details to Register</p>
                 <div className="row">
