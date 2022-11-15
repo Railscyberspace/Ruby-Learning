@@ -22,7 +22,7 @@ function Login(){
                         <input type="text" className="form-control input-fill" id = 'place' placeholder="Last name" aria-label="Last name"/>
                     </div>
             </div>
-           <div className="row g-3">
+           {/* <div className="row g-3">
                 <div className="col">
                 <label>email</label>
                     <input type="text" className="form-control input-fill "id = 'place' placeholder="Email" aria-label="First name"/>
@@ -54,8 +54,8 @@ function Login(){
            </div>
                 <div className="col submit">
                     <button type="submit" className="btn btn-secondary btn-lg" >Submit</button>
-                 </div>
-            </div>
+    </div> */}
+            </div> 
         </div>
            
  
