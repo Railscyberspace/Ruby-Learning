@@ -1,73 +1,81 @@
-//Th main container starts here
-.Register-container{
-  background-color:rgba(255, 99, 71, 0.8);
-   width: 100%;
-   min-height: calc(100vh - 97px);
-   display: flex;
-   flex: none;
-   flex-direction: column;
-   justify-content: center;
-   order: 0;
-   align-items: center;
-   flex-grow: 0;
+// //Th main container starts here
+// .Register-container{
+//   background-color:rgba(255, 99, 71, 0.8);
+//    width: 100%;
+//    min-height: calc(100vh - 97px);
+//    display: flex;
+//    flex: none;
+//    flex-direction: column;
+//    justify-content: center;
+//    order: 0;
+//    align-items: center;
+//    flex-grow: 0;
 
-}
+// }
 
 
-.container-login{
-  background-color:white;
-  border-radius: 20px;
-  width: 90%;
-  height: 100%;
-  padding: 0 50px;
-  align-items: center;
-  margin-bottom: 50px;
-  padding-bottom: 40px;
-}
+// .container-login{
+//   background-color:white;
+//   border-radius: 20px;
+//   width: 90%;
+//   height: 100%;
+//   padding: 0 50px;
+//   align-items: center;
+//   margin-bottom: 50px;
+//   padding-bottom: 40px;
+// }
 
-.head-text{
-  margin-top: 20px;
-  text-align: center;
-  font-size: 30px;
+// .head-text{
+//   margin-top: 20px;
+//   text-align: center;
+//   font-size: 30px;
 
-}
+// }
 
-.welcome-text{
-  text-align: center;
-  font-size: 17px;
-  font-family: sans-serif;
-  font-weight: 500;
+// .welcome-text{
+//   text-align: center;
+//   font-size: 17px;
+//   font-family: sans-serif;
+//   font-weight: 500;
 
-}
+// }
 
-label{
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: capitalize;
-}
+// label{
+//   font-size: 15px;
+//   font-weight: 600;
+//   text-transform: capitalize;
+// }
 
-.input-fill {
-  width: 100%;
-  border: 1px solid#d0d0d0;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  margin-top: 10px;
-  border-color: #d0d0d0;
-  color: white;
-} 
+// .input-fill {
+//   width: 100%;
+//   border: 1px solid#d0d0d0;
+//   border-radius: 8px;
+//   margin-bottom: 12px;
+//   margin-top: 10px;
+//   border-color: #d0d0d0;
+//   color: white;
+// } 
 
-.form-control.input-fill:focus{
-  box-shadow: none;
-}
 
-#place{
-  font-weight: 600;
-  font-size: 16px;
-}
-.col.submit{
-  text-align: center;
-  margin-top: 15px;
-  border: px solid rgb(255, 255, 255);
+// .form-control.input-fill{
+//   display: flex;
+//   padding: 10px;
+// }
+
+
+// .form-control.input-fill:focus{
+//   box-shadow: none;
+// }
+
+
+// #place{
+//   font-weight: 600;
+//   font-size: 16px;
+// }
+// .col.submit{
+//   text-align: center;
+//   margin-top: 15px;
+//   border: px solid rgb(255, 255, 255);
   
-}
+// }
 
