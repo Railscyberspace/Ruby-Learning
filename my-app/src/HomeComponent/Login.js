@@ -9,8 +9,9 @@ function Login(){
     return(
         <div>
 
-                <div class="container text-center">
-                    <div class="row align-items-start">
+                <div class="container text-center Register-container">
+                    <div class="row align-items-start" >
+                     <div  className ="container-login">
                             <div class="col">
                             <label>firstname</label>
                                   <input type="text" className="form-control input-fill" id = 'place'  placeholder="First name" aria-label="First name"/>
@@ -39,7 +40,7 @@ function Login(){
                             <label>Local-Govt</label>
                                   <input type="text" className="form-control input-fill" id = 'place'  placeholder="Local-Govt" aria-label="First name"/>
                             </div>
-                    </div>
+                         </div>
 
                             <div class="row align-items-end">
                                 <div class="col">
@@ -54,9 +55,10 @@ function Login(){
                                             <button type='submit' className='submit'>Submit</button>
                                  </div>
                                 </div>
+              </div>          
                  </div>
 
-                  
+
 
 
 
