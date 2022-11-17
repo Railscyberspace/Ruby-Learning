@@ -13,14 +13,14 @@ import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
-// import  th  from './Images/th.jpeg';
+//`import  th  from './Images/th.jpeg';
 
 
 function App() {
   return (
     <div className="App">
   <header>
-  <nav className='nav-bar'>
+  <nav className='nav-bar container-fluid'>
     <div className='logo-header'>
       <img  className = 'logo' src =  {logo} alt ='logo'/>
       </div>
@@ -39,7 +39,7 @@ function App() {
   </nav>
   </header>
       <Routes>
-       <Route path ="/" element ={<Home/>}></Route>navbar navbar-expand-lg sticky-top
+       <Route path ="/" element ={<Home/>}></Route>
         <Route path ="/contact" element ={<Contact/>}></Route>
         <Route path ="/login" element ={<Login/>}></Route>
         <Route path ="/signUp" element ={<SignUp/>}></Route>
@@ -47,7 +47,7 @@ function App() {
         <Route path='/inverters' element={<Inverters/>}></Route>
         <Route path='/batteries' element={<Batteries/>}></Route>
       </Routes>
- 
+      
     </div>
   );
 }
