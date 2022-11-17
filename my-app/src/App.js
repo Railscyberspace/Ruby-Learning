@@ -24,13 +24,12 @@ function App() {
     <div className='logo-header'>
       <img  className = 'logo' src =  {logo} alt ='logo'/>
       </div>
-  
       <form class="d-flex push container" role="search">
          {/* <img  className='icon' src={th} height={50} width={50} alt ="search icon"/> */}
           <input className="form-control me-2 fill searchbox" id = "search" type="search" placeholder="Search for your items here......" aria-label="Search"/>
           <button  className='searchbutton'  value="search" type="submit">Search</button>
         </form>
-      <div className='nav-link  container-fluid'>
+      <div className='nav-link navbar navbar-expand-lg sticky-top container-fluid'>
         <Link to ="login" className ="nav-item">Login</Link>
         <Link to ="signup" className ="nav-item">SignUp</Link>
         <Link to ="logout" className ="nav-item">LogOut</Link>
@@ -40,7 +39,7 @@ function App() {
   </nav>
   </header>
       <Routes>
-       <Route path ="/" element ={<Home/>}></Route>
+       <Route path ="/" element ={<Home/>}></Route>navbar navbar-expand-lg sticky-top
         <Route path ="/contact" element ={<Contact/>}></Route>
         <Route path ="/login" element ={<Login/>}></Route>
         <Route path ="/signUp" element ={<SignUp/>}></Route>
