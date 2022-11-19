@@ -13,6 +13,7 @@ import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
+import Register from './ProductComponent/Register';
 //`import  th  from './Images/th.jpeg';
 
 
@@ -35,6 +36,7 @@ function App() {
         <Link to ="logout" className ="nav-item">LogOut</Link>
         <Link to ="inverters" className='nav-item'>Inverters</Link>
         <Link to = "batteries" className = 'nav-item'>Batteries</Link>
+        <Link to ='register' className='nav-item'>Register</Link>
       </div>     
   </nav>
   </header>
@@ -46,6 +48,7 @@ function App() {
         <Route path ="/logout" element ={<LogOut/>}></Route>
         <Route path='/inverters' element={<Inverters/>}></Route>
         <Route path='/batteries' element={<Batteries/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
       </Routes>
       
     </div>
