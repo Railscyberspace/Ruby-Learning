@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom"
-function header(){
+import '../StyleComponent/header.scss';
+
+
+
+function Header(){
     return(
         <div>
                 <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light">
@@ -14,19 +18,19 @@ function header(){
                             <Link to = "inverters" className="nav-link nav-link-color" >Find doctor</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to = "batteries" className="nav-link nav-link-color" href="#">Hospitals</Link>
+                            <Link to = "batteries" className="nav-link nav-link-color">TIM</Link>
                             </li>
                             <li className="nav-item">
                             <Link to = "" className="nav-link nav-link-color">Services</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to ="" className="nav-link nav-link-color" href="#">Pricing</Link>
+                            <Link to ="" className="nav-link nav-link-color">Pricing</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to = "" className="nav-link nav-link-color" href="#">Contact us</Link>
+                            <Link to = "" className="nav-link nav-link-color">Contact us</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to = "" className="nav-link nav-link-color" href="#">FAQ</Link>
+                            <Link to = "" className="nav-link nav-link-color">FAQ</Link>
                             </li>
                         </ul>
                         
@@ -34,10 +38,10 @@ function header(){
                             <Link to = "login" className = "btn auth-btn register-btn" ></Link> 
                             <Link to = "register" className = "btn auth-btn small-btn login-btn" ></Link> 
                             <Link to = "/" className = "btn auth-btn register-btn" ></Link> 
-                            </div>
                         </div>
+                     </div>
 
-                    <div className=" nav-item mobile-path">
+                    <div className = "nav-item mobile-path">
                         <div className = "search-container">
                             <img src =  "" alt = "search" className ="search-icon mobile-icon" />
                         </div>
@@ -45,7 +49,7 @@ function header(){
                             <img src = "" className =  "auth-user-icon"/>
                             <h3 className="signout">SignOut</h3>
                             </Link>
-                            <Link to = "" className="mobile-login-btn">
+                            <Link to = "/" className="mobile-login-btn">
                             <img src = "" className = "auth-user-icon "/>
                             <h3 className="mobile-icon">Login</h3>
                             </Link>
@@ -55,7 +59,6 @@ function header(){
                             </Link>
                         </div>
                     </div>
-                </div>
             </nav>
 
 </div>
@@ -63,4 +66,4 @@ function header(){
  );
 };
 
-export default header;
+export default Header;
