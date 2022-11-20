@@ -1,4 +1,6 @@
 import '../StyleComponent/Login.scss';
+import '../StyleComponent/Register.scss';
+
 
 // import {useState} from 'react';
 function Login(){  
