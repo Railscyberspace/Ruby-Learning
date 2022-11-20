@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import '../StyleComponent/header.scss';
-
+import logo  from '../Images/logo.png';
 
 
 function Header(){
@@ -8,7 +8,7 @@ function Header(){
         <div>
                 <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light">
                     <div className="container-fluid">
-                        <Link to = '/' className="navbar-brand text-center"><img src = 'header_svgs/logo.svg'  alt = "logo" className = "main-logo"/></Link>
+                        <Link to = '/' className="navbar-brand text-center"><img src =  {logo}   alt = "logo" className = "main-logo"/></Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>
@@ -36,8 +36,7 @@ function Header(){
                         
                         <div className="d-flex">
                             <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
-                            <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link> 
-                            <Link to = "/" className = "btn auth-btn register-btn" >Home</Link> 
+                            <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link>
                         </div>
                      </div>
 
