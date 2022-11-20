@@ -20,28 +20,67 @@ import Header from './ProductComponent/Header';
 
 function App() {
   return (
-    <div className="App">
-  <header>
-  <nav className='nav-bar container-fluid'>
-    <div className='logo-header'>
-      <img  className = 'logo' src =  {logo} alt ='logo'/>
-      </div>
-      <form class="d-flex push container" role="search">
-         {/* <img  className='icon' src={th} height={50} width={50} alt ="search icon"/> */}
-          <input className="form-control me-2 fill searchbox" id = "search" type="search" placeholder="Search for your items here......" aria-label="Search"/>
-          <button  className='searchbutton'  value="search" type="submit">Search</button>
-        </form>
-      <div className='nav-link navbar navbar-expand-lg sticky-top container-fluid'>
-        <Link to ="login" className ="nav-item">Login</Link>
-        <Link to ="signup" className ="nav-item">SignUp</Link>
-        <Link to ="logout" className ="nav-item">LogOut</Link>
-        <Link to ="inverters" className='nav-item'>Inverters</Link>
-        <Link to = "batteries" className = 'nav-item'>Batteries</Link>
-        <Link to ='register' className='nav-item'>Register</Link>
-        <Link to = "header" className='nav-item'>header</Link>
-      </div>     
-  </nav>
-  </header>
+  <div>
+
+              <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light">
+                    <div className="container-fluid">
+                        <Link to = '/' className="navbar-brand text-center"><img src =  {logo}   alt = "logo" className = "main-logo"/></Link>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse nav-bar-destop navbar-collapse" id="navbarTogglerDemo01" >
+                        <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+{/* 
+                        <form class="d-flex push container" role="search">
+                            <input className="" id = "search" type="search" placeholder="Search for your items here......" aria-label="Search"/>
+                            <button  className=''  value="search" type="submit">Search</button>
+                        </form> */}
+{/* 
+                        form-control me-2 fill searchbox */}
+                            <li className="nav-item">
+                            <Link to = "inverters" className="nav-link nav-link-color" >Find doctor</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link to = "batteries" className="nav-link nav-link-color">TIM</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link to = "" className="nav-link nav-link-color">Services</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link to ="" className="nav-link nav-link-color">Pricing</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link to = "" className="nav-link nav-link-color">Contact us</Link>
+                            </li>
+                            <li className="nav-item">
+                            <Link to = "" className="nav-link nav-link-color">FAQ</Link>
+                            </li>
+                        </ul>
+                        <div className="d-flex">
+                            <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
+                            <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link>
+                        </div>
+                     </div>
+
+                    <div className = "nav-item mobile-path">
+                        <div className = "search-container">
+                            <img src =  "" alt = "search" className ="search-icon mobile-icon" />
+                        </div>
+                            <Link  className="mobile-login-btn">
+                            <img src = "" className =  "auth-user-icon"/>
+                            <h3 className="signout">SignOut</h3>
+                            </Link>
+                            <Link to = "/" className="mobile-login-btn">
+                            <img src = "" className = "auth-user-icon "/>
+                            <h3 className="mobile-icon">Login</h3>
+                            </Link>
+                            <Link to = "" className="mobile-register-btn">
+                            <img src = "header_svgs/purple-user.svg" alt = "user" className = "auth-user-icon"/>
+                            <h3 className="mobile-icon">Register</h3>
+                            </Link>
+                        </div>
+                    </div>
+            </nav>
       <Routes>
        <Route path ="/" element ={<Home/>}></Route>
         <Route path ="/contact" element ={<Contact/>}></Route>
@@ -51,7 +90,6 @@ function App() {
         <Route path='/inverters' element={<Inverters/>}></Route>
         <Route path='/batteries' element={<Batteries/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
-        <Route path='/header' element={<Header/>}></Route>
       </Routes>
       
     </div>
