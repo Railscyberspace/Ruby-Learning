@@ -35,9 +35,9 @@ function Header(){
                         </ul>
                         
                         <div className="d-flex">
-                            <Link to = "login" className = "btn auth-btn register-btn" ></Link> 
-                            <Link to = "register" className = "btn auth-btn small-btn login-btn" ></Link> 
-                            <Link to = "/" className = "btn auth-btn register-btn" ></Link> 
+                            <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
+                            <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link> 
+                            <Link to = "/" className = "btn auth-btn register-btn" >Home</Link> 
                         </div>
                      </div>
 
