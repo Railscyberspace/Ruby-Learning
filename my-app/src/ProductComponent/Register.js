@@ -12,7 +12,7 @@ function Register(){
     <div className="row">
       <div className="col form-group">
         <label>firstname</label>
-       <input type = "text"className = "form-control input-fill"  placeholder = "FirstName" />
+       <input type = "text"className = "form-control input-fill"  placeholder = "Firstname" />
       </div>	
       <div className="col form-group">
         <label>lastname</label>
@@ -25,6 +25,7 @@ function Register(){
         <input type="text" className = "form-control input-fill"  placeholder = "Email" />
       </div>
     </div>
+    
     <div className="row">
       <div className="col form-group">
         <label>Phone</label>
@@ -47,25 +48,18 @@ function Register(){
     </div>
     </div>
     
-    <div className="actions">
-   </div>
    <div className = "text-or">
-    <h5 className ="or-move">
-       <span className = "or">Or</span>
-    </h5>
+    <h5 className ="or-move"><span className = "or">Or</span> </h5>
     </div>
 
     <div className = "shift-google">
-  <a className="button-log-google password-link" href="<%= user_google_omniauth_authorize_path%>">
-    <span>Login with Google</span>
-  </a>
-</div>
+          <Link className="button-log-google">login with Google</Link>
+     </div>
 
 
 <div className = "shift-facebook">
-  <a  className="button-log-google password-link" href="<%= user_facebook_omniauth_authorize_path%>" >
-    <span>Login with Facebook</span>
-  </a>
+  <Link className="button-log-google">login with facebook</Link>
+</div>
 </div>
 
 </div>
@@ -74,35 +68,6 @@ function Register(){
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
    )
 };
 
