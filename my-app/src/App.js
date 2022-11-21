@@ -33,10 +33,10 @@ function App() {
                         <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
 
                             <li className="nav-item">
-                            <Link to = "inverters" className="nav-link nav-link-color" >Find doctor</Link>
+                            <Link to = "inverters" className="nav-link nav-link-color" >Inverters</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to = "batteries" className="nav-link nav-link-color">TIM</Link>
+                            <Link to = "batteries" className="nav-link nav-link-color">Batteries</Link>
                             </li>
                             <li className="nav-item">
                             <Link to = "" className="nav-link nav-link-color">Services</Link>
