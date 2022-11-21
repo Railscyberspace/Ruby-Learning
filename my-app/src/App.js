@@ -14,16 +14,15 @@ import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
 import Register from './ProductComponent/Register';
-//`import  th  from './Images/th.jpeg';
 import './StyleComponent/header.scss';
-import './StyleComponent/Logo.scss'
+import './StyleComponent/Logo.scss';
 
 
 function App() {
   return (
   <div>
-
-              <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light">
+       
+              <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light" >
                     <div className="container-fluid">
                    <Link to = '/' className="navbar-brand text-center"></Link> 
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +47,7 @@ function App() {
                             <Link to = "" className="nav-link nav-link-color">Contact us</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to = "" className="nav-link nav-link-color">FAQ</Link>
+                            <Link to = "" className="nav-link nav-link-color">FAQ </Link>
                             </li>
                         </ul>
                         <div className="d-flex">
@@ -59,6 +58,7 @@ function App() {
 
                     </div>
             </nav>
+          
       <Routes>
        <Route path ="/" element ={<Home/>}></Route>
         <Route path ="/contact" element ={<Contact/>}></Route>

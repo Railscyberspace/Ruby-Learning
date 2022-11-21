@@ -1,14 +1,4 @@
-.nav-bar{
-  max-width: 114rem;
-  
-}
 
-
-nav {
-    background: tomato;
-  
-  }
-  
   div.nav-link{
     position:relative;
     justify-content: stretch;
@@ -52,28 +42,6 @@ nav {
   }
   
   
-
-  #search{
-    text-align: left;
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-
-
-.searchbutton{
-    font-weight: 600;
-    font-size: 22px;
-    border-radius: 10px;
-    border: solid 1.9px rgba(255, 99, 71, 0.7);
-    background: rgb(255, 255, 255);
-    display: inline-flex;
-    color: rgb(0,0,0);
-    box-shadow: 1px 2px 2px rgb(255, 255, 240); 
-    
-
-} 
 
  button.searchbutton:active{
   transform: translateY(-1px);
