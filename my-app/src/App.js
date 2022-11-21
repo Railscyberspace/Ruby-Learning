@@ -14,8 +14,9 @@ import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
 import Register from './ProductComponent/Register';
-import Header from './ProductComponent/Header';
 //`import  th  from './Images/th.jpeg';
+import './StyleComponent/header.scss';
+import './StyleComponent/Logo.scss'
 
 
 function App() {
@@ -24,19 +25,13 @@ function App() {
 
               <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light">
                     <div className="container-fluid">
-                        <Link to = '/' className="navbar-brand text-center"><img src =  {logo}   alt = "logo" className = "main-logo"/></Link>
+                   <Link to = '/' className="navbar-brand text-center"></Link> 
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse nav-bar-destop navbar-collapse" id="navbarTogglerDemo01" >
                         <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
-{/* 
-                        <form class="d-flex push container" role="search">
-                            <input className="" id = "search" type="search" placeholder="Search for your items here......" aria-label="Search"/>
-                            <button  className=''  value="search" type="submit">Search</button>
-                        </form> */}
-{/* 
-                        form-control me-2 fill searchbox */}
+
                             <li className="nav-item">
                             <Link to = "inverters" className="nav-link nav-link-color" >Find doctor</Link>
                             </li>
