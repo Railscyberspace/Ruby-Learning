@@ -57,23 +57,6 @@ function App() {
                         </div>
                      </div>
 
-                    <div className = "nav-item mobile-path">
-                        <div className = "search-container">
-                            <img src =  "" alt = "search" className ="search-icon mobile-icon" />
-                        </div>
-                            <Link  className="mobile-login-btn">
-                            <img src = "" className =  "auth-user-icon"/>
-                            <h3 className="signout">SignOut</h3>
-                            </Link>
-                            <Link to = "/" className="mobile-login-btn">
-                            <img src = "" className = "auth-user-icon "/>
-                            <h3 className="mobile-icon">Login</h3>
-                            </Link>
-                            <Link to = "" className="mobile-register-btn">
-                            <img src = "header_svgs/purple-user.svg" alt = "user" className = "auth-user-icon"/>
-                            <h3 className="mobile-icon">Register</h3>
-                            </Link>
-                        </div>
                     </div>
             </nav>
       <Routes>
