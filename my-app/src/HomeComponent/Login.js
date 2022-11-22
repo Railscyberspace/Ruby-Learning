@@ -1,5 +1,7 @@
 import '../StyleComponent/Login.scss';
 import '../StyleComponent/Register.scss';
+import {Link} from 'react-router-dom';
+
 
 
 // import {useState} from 'react';
@@ -18,42 +20,11 @@ function Login(){
                     <span className = "welcome-message text"> Welcome to the future of power backups.
                         Login to your account </span>
               </div> 
-                      <div className='row'>
-                        <div className='col form-group'>
-                            <label>firstname</label>
-                            <input type='text' className = 'form-control input-fill' id ='control' placeholder = 'firstname'/>
-                        </div>
-                    </div>
-                    <div className='row'>
-                        <div className='col form-group'>
-                            <label>lastName</label>
-                            <input type='text' className = 'form-control input-fill' id ='control' placeholder = 'lastname'/>
-                        </div>
-                    </div>
+                      
                     <div className='row'>
                         <div className='col form-group'>
                             <label>Email</label>
                             <input type='email' className = 'form-control input-fill' id ='control' placeholder = 'email'/>
-                        </div>
-                    </div>
-                    <div className='row'>
-                        <div className='col form-group'>
-                            <label>Phone</label>
-                            <input type='number' className = 'form-control input-fill' id ='control' placeholder = 'phone'/>
-                        </div>
-                    </div>
-
-                    <div className='row'>
-                        <div className='col form-group'>
-                            <label>state</label>
-                            <input type='text' className = 'form-control input-fill' id ='control' placeholder = 'state'/>
-                        </div>
-                    </div>
-
-                    <div className='row'>
-                        <div className='col form-group'>
-                            <label>Local-Govt</label>
-                            <input type='text' className = 'form-control input-fill' id ='control' placeholder = 'local-govt'/>
                         </div>
                     </div>
 
@@ -65,10 +36,23 @@ function Login(){
                     </div>
                     <div className='row'>
                         <div className='col form-group'>
-                            <label>confirm password</label>
-                            <input type='password' className = 'form-control input-fill' id ='control' placeholder = 'confirm password'/>
+                        <button class="btn btn-outline-success butting btn-secondary" type="submit">Login</button>
                         </div>
                     </div>
+
+                 <div className = "text-or">
+                    <h5 className ="or-move"><span className = "or">Or</span> </h5>
+                    </div>
+
+                    <div className = "shift-google">
+                        <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with Google</Link>
+                    </div>
+
+
+                    <div className = "shift-facebook">
+                     <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with facebook</Link>
+                   </div>
+
       
                 </div>
 

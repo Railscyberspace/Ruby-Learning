@@ -31,6 +31,24 @@ function Register(){
         <input type="text" className = "form-control input-fill"  placeholder = "Email" />
       </div>
     </div>
+
+
+    <div className='row'>
+        <div className='col form-group'>
+            <label>State</label>
+            <input type='email' className = 'form-control input-fill' id ='control' placeholder = 'email'/>
+        </div>
+       </div>
+       <div className='row'>
+           <div className='col form-group'>
+                        <label>Local-Govts</label>
+                    <select className="form-select form-select form-control input-fill" aria-label=".form-select-lg example" id = "select-gender">
+                      <option className="select" >Local-Govts Area</option>
+                      <option className="email" value="Female" >Yakurr</option>
+                      <option className="email" value="Male">Yala</option>
+                    </select>
+             </div>
+        </div>
     
     <div className="row">
       <div className="col form-group">
@@ -53,25 +71,26 @@ function Register(){
        < input type = "password" className = "form-control input-fill" placeholder = "Password"/>
     </div>
     </div>
-    
-   <div className = "text-or">
-    <h5 className ="or-move"><span className = "or">Or</span> </h5>
-    </div>
 
-    <div className = "shift-google">
-          <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with Google</Link>
-    </div>
+      <div className='row'>
+                    <div className='col form-group'>
+                  <label>confirm password</label>
+               <input type='password' className = 'form-control input-fill' id ='control' placeholder = 'confirm password'/>
+              </div>
+      </div>
+      <div className='row'>
+          <div className='col form-group'>
+          <button class="btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
+          </div>
+      </div>
 
-
-    <div className = "shift-facebook">
-        <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with facebook</Link>
-    </div>
-</div>
-
-</div>
-<div className = "link-account">
-  <Link to ='/login' className="link-account">login</Link>
   </div>
+     <div className = "link-account">
+               <Link to ='/login' className="link-account "><Link>Already Have an account</Link> Login</Link>
+    </div>
+
+   </div>
+
 </div>
 
    )
