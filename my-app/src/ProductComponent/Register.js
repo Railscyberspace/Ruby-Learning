@@ -86,7 +86,7 @@ function Register(){
 
   </div>
      <div className = "link-account">
-               <Link to ='/login' className="link-account "><Link>Already Have an account</Link> Login</Link>
+               <Link to ='/login' className="link-account links "><Link className="links">Already Have an account</Link> Login</Link>
     </div>
 
    </div>

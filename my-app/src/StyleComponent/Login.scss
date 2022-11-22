@@ -141,41 +141,56 @@
     order: 0;
     flex-grow: 0;
   }
+  .push-btn{
+    display: flex;
+  }
   
+  .link-account {
+    height: 44px;
+    line-height: 44px;
+    display: inline;
+    color: #ffff;
+    margin-top: 16px;
+    margin-bottom: 17px;
+  }
   
-//   .link-account {
-//     height: 44px;
-//     line-height: 44px;
-//     display: inline;
-//     color: #ffff;
-//     margin-top: 16px;
-//     margin-bottom: 17px;
-//   }
+  .have-account {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #ffff;
+    text-decoration: none;
+    display: inline;
+  }
   
-//   .have-account {
-//     font-family: "Open Sans";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 32px;
-//     color: #ffff;
-//     text-decoration: none;
-//     display: inline;
-//   }
+  .account-login {
+    color: #ffff;
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
   
-//   .account-login {
-//     color: #ffff;
-//     text-decoration: none;
-//     font-family: "Open Sans";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 20px;
-//     text-align: center;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .links{
+    color: rgb(255, 255, 255);
+  }
+
+  .links:active{
+    color: rgb(255, 255, 255);
+
+  }
+  .links:hover{
+    color: rgb(255, 99, 71);
+
+  }
   
-//     &:hover {
-//       color: #fff;
-//     }
-//   }
-  
+
 //   .forgotten-password {
 //     width: 150px;
 //     height: 25px;
