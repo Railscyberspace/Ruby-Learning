@@ -19,7 +19,7 @@ function Login(){
                     <h4 className = "login-login text">Create An account</h4>
                     <span className = "welcome-message text"> Welcome to the future of power backups.
                         Login to your account </span>
-              </div> 
+                </div> 
                       
                     <div className='row'>
                         <div className='col form-group'>
@@ -52,9 +52,12 @@ function Login(){
                     <div className = "shift-facebook">
                      <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with facebook</Link>
                    </div>
-
-      
                 </div>
+
+                <div className = "link-account">
+                          <Link to ='/register' className="link-account links "><Link className="links">Don't have an Account</Link> Login</Link>
+                </div>
+
 
             </div>
     </div>
