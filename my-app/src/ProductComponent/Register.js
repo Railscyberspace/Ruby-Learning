@@ -8,10 +8,13 @@ function Register(){
     <div>
                  
   <div className = "form-container" >
-   <div className = "container-login register"> 
+   <div className = "container-login register">
+    <div className="heading-text">
     <h4 className = "login-login text">Create An account</h4>
-     <p className = "welcome-message text"> Welcome to the future of swift medical consultation.
-             Create an account to get started. </p>
+     <span className = "welcome-message text"> Welcome to the future of power backups.
+         Create an account to get started. </span>
+    </div> 
+   
     <div className="row">
       <div className="col form-group">
         <label>firstname</label>
@@ -57,12 +60,12 @@ function Register(){
 
     <div className = "shift-google">
           <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with Google</Link>
-     </div>
+    </div>
 
 
-<div className = "shift-facebook">
-  <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with facebook</Link>
-</div>
+    <div className = "shift-facebook">
+        <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with facebook</Link>
+    </div>
 </div>
 
 </div>

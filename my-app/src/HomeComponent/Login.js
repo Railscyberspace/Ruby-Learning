@@ -13,8 +13,11 @@ function Login(){
 
             <div className = "form-container">
                 <div className='container-login register'>
-                    <h4 className='login-login text'>Create An Account</h4>
-                    <p className = 'welcome-message text'>Welcome to your ons stop for power backups</p>
+                <div className="heading-text">
+                    <h4 className = "login-login text">Create An account</h4>
+                    <span className = "welcome-message text"> Welcome to the future of power backups.
+                        Login to your account </span>
+              </div> 
                       <div className='row'>
                         <div className='col form-group'>
                             <label>firstname</label>
