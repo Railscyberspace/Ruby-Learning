@@ -56,12 +56,12 @@ function Register(){
     </div>
 
     <div className = "shift-google">
-          <Link className="button-log-google">login with Google</Link>
+          <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with Google</Link>
      </div>
 
 
 <div className = "shift-facebook">
-  <Link className="button-log-google">login with facebook</Link>
+  <Link className=" button-log-google btn btn-outline-success butting btn-secondary">login with facebook</Link>
 </div>
 </div>
 

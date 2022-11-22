@@ -9,7 +9,7 @@ import SignUp from './HomeComponent/SignUp';
 import LogOut from './HomeComponent/LogOut';
 import {Routes, Route, Link } from 'react-router-dom';
 import Home from './HomeComponent/Home';
-import logo from './Images/logo.png';
+// import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
@@ -21,7 +21,7 @@ import './StyleComponent/Logo.scss';
 function App() {
   return (
   <div>
-       
+   
               <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light" >
                     <div className="container-fluid">
                    <Link to = '/' className="navbar-brand text-center"></Link> 
@@ -29,8 +29,12 @@ function App() {
                         <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse nav-bar-destop navbar-collapse" id="navbarTogglerDemo01" >
-                        <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 inputfill" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success butting btn-secondary" type="submit">Search</button>
+                        </form>
 
+                        <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
                             <Link to = "inverters" className="nav-link nav-link-color" >Inverters</Link>
                             </li>
@@ -53,6 +57,7 @@ function App() {
                         <div className="d-flex">
                             <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
                             <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link>
+                          
                         </div>
                      </div>
 
@@ -68,6 +73,8 @@ function App() {
         <Route path='/inverters' element={<Inverters/>}></Route>
         <Route path='/batteries' element={<Batteries/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
+
+
       </Routes>
       
     </div>

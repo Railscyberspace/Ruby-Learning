@@ -23,12 +23,13 @@
     align-items: center;
     flex-direction: column;
     min-height: calc(100vh - 40px);
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
+  
   }
   
-//   .container-login.register {
-//     height: 100%;
-//   }
+ .container-login.register {
+       height: 100%;
+}
 
   .login-login.text{
     font-family: "Open Sans";
@@ -50,6 +51,7 @@
     padding: 0 50px;
     margin-top: 20px;
     padding-bottom: 40px;
+   
   }
   
   .form-group label,
@@ -78,63 +80,57 @@
     box-shadow: none;
   }
   
-//   .password-image {
-//     /* Password see image */
-//     background-image: url ("google_login/password-logo.svg");
-//     background-repeat: no-repeat;
-//     background-position: right 0.75rem center;
-//     background-size: 16px 12px;
-//     border: 1px solid #0000;
-//     border-radius: 0.24rem;
-//     appearance: none;
-//   }
+  .shift-facebook{
+     margin-top: 20px;    
+  }
+
+ 
+  .button-log {
+    padding: 10px 51px;
+    gap: 10px;
+    width: 100%;
+    background: rgba(255, 99, 71);
+    border-radius: 16px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255)
+  }
   
-//   .button-log {
-//     padding: 10px 51px;
-//     gap: 10px;
-//     width: 100%;
-//     background: $primary_purple;
-//     border-radius: 16px;
-//     margin-bottom: 15px;
-//     color: $primary_white;
-//   }
+  .button-log-google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 51px;
+    gap: 10px;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid#814A95;
+    color: #000;
+    text-decoration: none;
+  }
   
-//   .button-log-google {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 10px 51px;
-//     gap: 10px;
-//     width: 100%;
-//     border-radius: 16px;
-//     border: 1px solid#814A95;
-//     color: #000;
-//     text-decoration: none;
-//   }
+  .text-or {
+    margin: 6px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
   
-//   .text-or {
-//     margin: 6px 1px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 100%;
-//   }
-  
-//   .or {
-//     width: 23px;
-//     height: 23px;
-//     font-family: "Open Sans";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 24px;
-//     letter-spacing: 0.015rem;
-//     color: #898989;
-//     flex: none;
-//     order: 0;
-//     flex-grow: 0;
-//   }
+  .or {
+    width: 23px;
+    height: 23px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.015rem;
+    color: #898989;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
   
   
 //   .link-account {
