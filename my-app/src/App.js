@@ -16,6 +16,7 @@ import Batteries from './ProductComponent/Batteries';
 import Register from './ProductComponent/Register';
 import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
+import Search  from './ProductComponent/Search';
 
 
 function App() {

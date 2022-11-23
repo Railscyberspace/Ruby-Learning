@@ -28,11 +28,20 @@ const data = [
     }
 ]
 
+function SendDate(){
+
 const topSearch =  data.map(informs => {
-    return {
-        contents:`${informs.title} - ${informs.discription} - ${informs.image}`,
-        role: informs.role,
-    }
+    const listItems = data.map(result =>{
+        const itemsLists = `${result.title} - ${result.discription} - ${result.role}`
+        return <li>{itemsLists}</li>
+    })
+    return(
+        <div>
+            <ul>{listItems}</ul>
+        </div>
+    )
 })
+
+}
 
 console.log(topSearch)
