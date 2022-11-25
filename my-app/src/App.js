@@ -19,7 +19,17 @@ import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 
 
-function App(props) {
+function App() {
+  const searchClick1 = <Link to  = 'inverters'></Link>
+  const searchClick2 = <Link to = "batteries"></Link>
+
+   function resultSearch(){
+    if(Search ===  searchClick1 &&  Search === searchClick2){
+    return <Inverters/>
+   }
+     return <Batteries/>
+  }
+   
   return (
   <div>
    
@@ -32,7 +42,7 @@ function App(props) {
                         <div className="collapse nav-bar-destop navbar-collapse" id="navbarTogglerDemo01" >
                         <form class="d-flex" role="search">
                             <input class="form-control me-2 inputfill" type="search" placeholder="Search" aria-label="Search"/>
-                            <button onClick={props.Search} class="btn btn-outline-success butting btn-secondary" type="submit">Search</button>
+                            <button onClick={resultSearch} class="btn btn-outline-success butting btn-secondary" type="submit">Search</button>
                         </form>
 
                         <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">

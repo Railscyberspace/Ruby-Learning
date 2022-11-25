@@ -31,7 +31,7 @@ const Searching = [
             }
         ]
 
-function Search (props){
+function Search (_props){
     const listItems = Searching.map(results =>{
         const itemsList = `${results.title} : ${results.role}`
         return <li>{itemsList}</li>
