@@ -1,4 +1,6 @@
 
+// import tubularwhite200 from '../Batteries/tubularwhite200.jpg';
+
 const Searching = [
 
         {
@@ -16,6 +18,7 @@ const Searching = [
                 image:"https://github.com/yocontra/react-responsive/commits?author=yocontra",
                 role:"senior dev",
         
+        
             },
             {
             id:3, 
@@ -28,9 +31,9 @@ const Searching = [
             }
         ]
 
-function Search (){
+function Search (props){
     const listItems = Searching.map(results =>{
-        const itemsList = `${results.id} - ${results.title} - ${results.role}`
+        const itemsList = `${results.title} : ${results.role}`
         return <li>{itemsList}</li>
     })
     return(

@@ -19,7 +19,7 @@ import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 
 
-function App() {
+function App(props) {
   return (
   <div>
    
@@ -32,7 +32,7 @@ function App() {
                         <div className="collapse nav-bar-destop navbar-collapse" id="navbarTogglerDemo01" >
                         <form class="d-flex" role="search">
                             <input class="form-control me-2 inputfill" type="search" placeholder="Search" aria-label="Search"/>
-                            <button class="btn btn-outline-success butting btn-secondary" type="submit">Search</button>
+                            <button onClick={props.Search} class="btn btn-outline-success butting btn-secondary" type="submit">Search</button>
                         </form>
 
                         <ul className="navbar-nav mx-auto me-auto mb-2 mb-lg-0">
@@ -43,7 +43,7 @@ function App() {
                             <Link to = "batteries" className="nav-link nav-link-color">Batteries</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to = "" className="nav-link nav-link-color">Services</Link>
+                            <Link to = "search" className="nav-link nav-link-color">Services</Link>
                             </li>
                             <li className="nav-item">
                             <Link to ="" className="nav-link nav-link-color">Pricing</Link>
@@ -74,6 +74,7 @@ function App() {
         <Route path='/inverters' element={<Inverters/>}></Route>
         <Route path='/batteries' element={<Batteries/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
+        <Route path='/search' element={<Search/>}></Route>
 
 
       </Routes>

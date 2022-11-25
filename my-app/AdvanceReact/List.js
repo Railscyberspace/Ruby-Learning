@@ -24,13 +24,10 @@ const data = [
         image:"https://github.com/pekeler",
         role:"peker dev",
 
-
     }
 ]
 
 function SendDate(){
-
-const topSearch =  data.map(informs => {
     const listItems = data.map(result =>{
         const itemsLists = `${result.title} - ${result.discription} - ${result.role}`
         return <li>{itemsLists}</li>
@@ -39,9 +36,7 @@ const topSearch =  data.map(informs => {
         <div>
             <ul>{listItems}</ul>
         </div>
-    )
-})
-
+    );
 }
-
-console.log(topSearch)
+console.log(topSearch);
+1
