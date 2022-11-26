@@ -32,7 +32,6 @@ function App() {
    
   return (
   <div>
-   
               <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light" >
                     <div className="container-fluid">
                    <Link to = '/' className="navbar-brand text-center"></Link> 
@@ -68,7 +67,6 @@ function App() {
                         <div className="d-flex">
                             <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
                             <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link>
-                          
                         </div>
                      </div>
 
@@ -93,3 +91,6 @@ function App() {
   );
 }
 export default App;
+
+
+
