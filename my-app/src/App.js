@@ -20,15 +20,15 @@ import Search  from './ProductComponent/Search';
 
 
 function App() {
-  const searchClick1 = <Link to  = 'inverters'></Link>
-  const searchClick2 = <Link to = "batteries"></Link>
+  // const searchClick1 = <Link to  = 'inverters'></Link>
+  // const searchClick2 = <Link to = "batteries"></Link>
 
-   function resultSearch(){
-    if(Search ===  searchClick1 &&  Search === searchClick2){
-    return <Inverters/>
-   }
-     return <Batteries/>
-  }
+  //  function resultSearch(){
+  //   if(Search ===  searchClick1 &&  Search === searchClick2){
+  //   return <Inverters/>
+  //  }
+  //    return <Batteries/>
+  // }
    
   return (
   <div>
