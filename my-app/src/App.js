@@ -29,7 +29,10 @@ function App() {
   //  }
   //    return <Batteries/>
   // }
-   
+
+
+
+  
   return (
   <div>
               <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light" >
