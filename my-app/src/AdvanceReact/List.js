@@ -53,17 +53,16 @@ const data1 = [
 
 const DessertsList = (props) => {
     const lowCaloriesDesserts = props.data
-      .filter((data1) => {
-        return data1.calories < 500;
+      .filter((datas) => {
+        return datas.calories < 500;
       })
       .sort((a, b) => { 
         return a.calories - b.calories; 
       })
-      .map((data1) => { 
+      .map((datas) => { 
         return ( 
           <li>
-            {data1.name} - {data1.calories} cal 
-          </li> 
+            {datas.name} - {datas.calories} cal </li> 
         ); 
       }); 
     return <ul>{lowCaloriesDesserts}</ul>; 
