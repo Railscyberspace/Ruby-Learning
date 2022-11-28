@@ -1,20 +1,29 @@
 import { Link } from "react-router-dom";
 import '../StyleComponent/Register.scss';
 import '../StyleComponent/Login.scss';
+// import { useState } from "react";
+
+
 
 
 function Register(){
+//  const  Form = () => {
+//   const [value, setValue] = useState("");
+ 
+//   const handleChange = (e) =>{
+//     setValue(e.target.value)
+// }; 
+
    return(
+   
     <div>
-                 
-  <div className = "form-container" >
+   <div className = "form-container" >
    <div className = "container-login register">
     <div className="heading-text">
     <h4 className = "login-login text">Create An account</h4>
      <span className = "welcome-message text"> Welcome to the future of power backups.
          Create an account to get started. </span>
     </div> 
-   
     <div className="row">
       <div className="col form-group">
         <label>firstname</label>
@@ -89,11 +98,11 @@ function Register(){
                <Link to ='/login' className="link-account links "><Link className="links">Already Have an account</Link> Login</Link>
     </div>
 
-   </div>
-
+   </div>  
+  
 </div>
 
-   )
+ )
 };
 
 export default Register;

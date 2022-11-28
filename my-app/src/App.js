@@ -17,11 +17,11 @@ import Register from './ProductComponent/Register';
 import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
-import DessertsList from './AdvanceReact/List';
+// import DessertsList from './AdvanceReact/List';
 
 
 function App() {
-  const data1 = [
+  // const data1 = [
     //     {
     //     id: 1,
     //     title: "railprofile",
@@ -48,27 +48,27 @@ function App() {
     //     }
     // 
     
-    {
-      name: "Chocolate Cake",
-      calories: 400,
-      createdAt: "2022-09-01",
-    },
-    {
-      name: "Ice Cream",
-      calories: 200,
-      createdAt: "2022-01-02",
-    },
-    {
-      name: "Tiramisu",
-      calories: 300,
-      createdAt: "2021-10-03",
-    },
-    {
-      name: "Cheesecake",
-      calories: 600,
-      createdAt: "2022-01-04",
-    },
-    ]
+    // {
+    //   name: "Chocolate Cake",
+    //   calories: 400,
+    //   createdAt: "2022-09-01",
+    // },
+    // {
+    //   name: "Ice Cream",
+    //   calories: 200,
+    //   createdAt: "2022-01-02",
+    // },
+    // {
+    //   name: "Tiramisu",
+    //   calories: 300,
+    //   createdAt: "2021-10-03",
+    // },
+    // {
+    //   name: "Cheesecake",
+    //   calories: 600,
+    //   createdAt: "2022-01-04",
+    // },
+    // ]
 
   
   return (
@@ -125,10 +125,10 @@ function App() {
         <Route path='/search' element={<Search/>}></Route>
       </Routes>
       
-       <body>
+       {/* <body>
          <h2>List of low calorie desserts:</h2>
          <DessertsList data={data1} />
-      </body>
+      </body> */}
 
 </div>
   );
