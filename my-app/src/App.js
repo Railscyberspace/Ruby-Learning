@@ -17,6 +17,7 @@ import Register from './ProductComponent/Register';
 import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
+import DessertsList from './AdvanceReact/List';
 
 
 function App() {
@@ -86,11 +87,14 @@ function App() {
         <Route path='/batteries' element={<Batteries/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/search' element={<Search/>}></Route>
-
-
       </Routes>
       
-    </div>
+       <body>
+         <h2>List of low calorie desserts:</h2>
+         <DessertsList data={data1} />
+      </body>
+
+</div>
   );
 }
 export default App;
