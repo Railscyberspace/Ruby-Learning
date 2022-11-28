@@ -5,7 +5,6 @@ import './StyleComponent/Logo.scss';
 import './StyleComponent/Nav.scss';
 import Contact from './HomeComponent/Contact';
 import Login from './HomeComponent/Login';
-import SignUp from './HomeComponent/SignUp';
 import LogOut from './HomeComponent/LogOut';
 import {Routes, Route, Link } from 'react-router-dom';
 import Home from './HomeComponent/Home';
@@ -17,7 +16,7 @@ import Register from './ProductComponent/Register';
 import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
-import Form from './ProductComponent/SIgnUp';
+import SignUp from './ProductComponent/SignUp';
 // import DessertsList from './AdvanceReact/List';
 
 
@@ -36,7 +35,7 @@ function App() {
     //         title:"coraprofile",
     //         discription: "github",
     //         image:"https://github.com/yocontra/react-responsive/commits?author=yocontra",
-    //         role:"senior dev",
+    //         role:"senior dev",container
     
     //     },
     //     {
