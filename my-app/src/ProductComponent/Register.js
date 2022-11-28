@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom";
 import '../StyleComponent/Register.scss';
 import '../StyleComponent/Login.scss';
-// import { useState } from "react";
+
 
 
 
 
 function Register(){
-//  const  Form = () => {
-//   const [value, setValue] = useState("");
- 
-//   const handleChange = (e) =>{
-//     setValue(e.target.value)
-// }; 
 
    return(
    

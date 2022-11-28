@@ -17,6 +17,7 @@ import Register from './ProductComponent/Register';
 import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
+import Form from './ProductComponent/SIgnUp';
 // import DessertsList from './AdvanceReact/List';
 
 
@@ -108,6 +109,7 @@ function App() {
                         <div className="d-flex">
                             <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
                             <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link>
+                            <Link to = "signup" className = "btn auth-btn small-btn login-btn" >SignUp</Link>
                         </div>
                      </div>
                     </div>
@@ -123,6 +125,7 @@ function App() {
         <Route path='/batteries' element={<Batteries/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/search' element={<Search/>}></Route>
+        <Route path='/signup' element={<SignUp/>}></Route>
       </Routes>
       
        {/* <body>
