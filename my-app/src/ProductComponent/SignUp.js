@@ -17,11 +17,6 @@ function SignUp(){
                         <input id = "name" type="text" placeholder = "Name" value={name} onChange ={e => setName(e.target.value)}/>
                         <button disabled={!name} type="submit">submit</button>
                     </div>
-
-
-
-                    
-                  
                 </fieldset>
             </form>
 
