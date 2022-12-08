@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom';
  import {useState} from 'react';
 
 function Login(){  
-     const [email, password, setEmail, setPassword] = useState('');
+     const [ password, setPassword] = useState('');
+     const [email, setEmail] = useState('')
      const handleSubmit = (e) =>{
         e.preventDefault()
         setEmail("")
@@ -35,7 +36,7 @@ function Login(){
                     </div>
                     <div className='row'>
                         <div className='col form-group'>
-                        <button disabled={!email && password} className="btn btn-outline-success butting btn-secondary push-btn" type="submit">Login</button>
+                        <button disabled={!email && !password} className="btn btn-outline-success butting btn-secondary push-btn" type="submit">Login</button>
                         </div>
                     </div>
 
