@@ -1,15 +1,15 @@
 import '../StyleComponent/Login.scss';
 import '../StyleComponent/Register.scss';
 import {Link} from 'react-router-dom';
+ import {useState} from 'react';
 
-
-
-// import {useState} from 'react';
 function Login(){  
+     const [email, setEmail] = useState(email, password);
+     const handleSubmit = (e) =>{
+        e.preventDefault()
+        setEmail("")
 
-    // const [form, setForm] = useState({
-    //     firstname:"",  lastName: '', Email: '', Password: ''
-    // });
+     }
     return(
         <div>
 
@@ -23,7 +23,7 @@ function Login(){
                       
                     <div className='row'>
                         <div className='col form-group'>
-                            <label>Email</label>
+                            <label htmlFor='email'>Email</label>
                             <input type='email' className = 'form-control input-fill' id ='control' placeholder = 'email'/>
                         </div>
                     </div>
