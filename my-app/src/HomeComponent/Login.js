@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
  import {useState} from 'react';
 
 function Login(){  
-     const [email, setEmail] = useState(email, password);
+     const [email, password, setEmail, setPassword] = useState('');
      const handleSubmit = (e) =>{
         e.preventDefault()
         setEmail("")
@@ -12,8 +12,7 @@ function Login(){
      }
     return(
         <div>
-
-            <div className = "form-container">
+            <form onSubmit={handleSubmit}  className = 'form-container'>              
                 <div className='container-login register'>
                 <div className="heading-text">
                     <h4 className = "login-login text">Create An account</h4>
@@ -24,19 +23,19 @@ function Login(){
                     <div className='row'>
                         <div className='col form-group'>
                             <label htmlFor='email'>Email</label>
-                            <input type='email' className = 'form-control input-fill' id ='control' placeholder = 'email'/>
+                            <input id = 'email' type='email' className = 'form-control input-fill' placeholder = 'email' value = {email} onChange = {e => setEmail(e.target.value)}/>
                         </div>
                     </div>
 
                     <div className='row'>
                         <div className='col form-group'>
-                            <label>Password</label>
-                            <input type='password' className = 'form-control input-fill' id ='control' placeholder = 'password'/>
+                            <label htmlFor='password'>Password</label>
+                            <input id = 'password' type='password' className = 'form-control input-fill'  placeholder = 'password' value={password} onChange = {e => setPassword(e.target.value)}/>
                         </div>
                     </div>
                     <div className='row'>
                         <div className='col form-group'>
-                        <button class="btn btn-outline-success butting btn-secondary push-btn" type="submit">Login</button>
+                        <button disabled={!email && password} className="btn btn-outline-success butting btn-secondary push-btn" type="submit">Login</button>
                         </div>
                     </div>
 
@@ -58,8 +57,7 @@ function Login(){
                           <Link to ='/register' className="link-account links "><Link className="links">Don't have an Account</Link> Login</Link>
                 </div>
 
-
-            </div>
+                </form>
     </div>
        
     );
