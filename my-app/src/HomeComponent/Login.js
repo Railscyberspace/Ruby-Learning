@@ -34,9 +34,9 @@ function Login(){
                             <input id = 'password' type='password' className = 'form-control input-fill'  placeholder = 'password' value={password} onChange = {e => setPassword(e.target.value)}/>
                         </div>
                     </div>
-                    <div className='row'>
+                    <div className='row center'>
                         <div className='col form-group'>
-                        <button disabled={!email && !password} className="btn btn-outline-success butting btn-secondary push-btn" type="submit">Login</button>
+                        <button disabled={!email && !password} className="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Login</button>
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@ function Login(){
                           <Link to ='/register' className="link-account links "><Link className="links">Don't have an Account</Link> Login</Link>
                 </div>
 
-                </form>
+            </form>
     </div>
        
     );
@@ -67,3 +67,4 @@ function Login(){
 export default Login;
 
 
+// btn btn-outline-success butting btn-secondary push-btn"
