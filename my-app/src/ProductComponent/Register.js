@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import '../StyleComponent/Register.scss';
 import '../StyleComponent/Login.scss';
+import { useState } from "react";
+
 
 
 
 
 
 function Register(){
+  const [firstname, lastname, email, State, Local_Govts, Phone, Gender, Password] = useState('')
+  const [setFirstName, setLastName, setEmail, setState, setPhone, setGender, setPassword] = useState('')
 
    return(
    
@@ -20,33 +24,33 @@ function Register(){
     </div> 
     <div className="row">
       <div className="col form-group">
-        <label>firstname</label>
-       <input type = "text"className = "form-control input-fill"  placeholder = "Firstname" />
+        <label className="label-text" htmlFor="firstname">firstname</label>
+       <input id="firstname" type = "text"className = "form-control input-fill"  placeholder = "Firstname" value={firstname} onChange = {e => setFirstName(e.target.value)}/>
       </div>	
       <div className="col form-group">
-        <label>lastname</label>
-       <input type="text" className ="form-control input-fill" placeholder="Lastname" />
+        <label className ="label-text"  htmlFor="lastname">lastname</label>
+       <input id = "lastname" type="text" className ="form-control input-fill" placeholder="Lastname" value={lastname} onChange ={e => setLastName(e.target.value)} />
       </div>	
     </div>
     <div className="row">
       <div className="col form-group">
-        <label> Email</label>
-        <input type="text" className = "form-control input-fill"  placeholder = "Email" />
+        <label className ="label-text" htmlFor="email"> Email</label>
+        <input id = "email" type="email" required ={true} className = "form-control input-fill"  placeholder = "Email"value={email} onChange ={e => setEmail(e.target.value)} />
       </div>
     </div>
 
 
     <div className='row'>
         <div className='col form-group'>
-            <label>State</label>
-            <input type='email' className = 'form-control input-fill' id ='control' placeholder = 'email'/>
+            <label className ="label-text"  htmlFor="state">State</label>
+            <input id ="state" type='text' className = 'form-control input-fil'  placeholder = 'State' value={State} onChange = {e => setState(e.target.value)}/>
         </div>
        </div>
        <div className='row'>
            <div className='col form-group'>
-                        <label>Local-Govts</label>
+                        <label htmlFor="Local_Govts" className ="label-text"> Local_Govts</label>
                     <select className="form-select form-select form-control input-fill" aria-label=".form-select-lg example" id = "select-gender">
-                      <option className="select" >Local-Govts Area</option>
+                      <option className="select" >Select Your Local_Govts</option>
                       <option className="email" value="Female" >Yakurr</option>
                       <option className="email" value="Male">Yala</option>
                     </select>
@@ -55,13 +59,13 @@ function Register(){
     
     <div className="row">
       <div className="col form-group">
-        <label>Phone</label>
-       <input type= "number" className = "form-control input-fill"  placeholder = "Phone"/>
+        <label className="label-text" htmlFor="Phone">Phone</label>
+       <input id = "Phone" type= "number" className = "form-control input-fill"  placeholder = "Phone" value={Phone} onChange = {e => setPhone(e.target.value)}/>
       </div>
       <div className="col form-group">
-        <label>Gender </label>
+        <label htmlFor="Gender" className ="label-text">Gender </label>
         <select className="form-select form-select form-control input-fill" aria-label=".form-select-lg example" id = "select-gender">
-          <option className="select" >Gender</option>
+          <option id="Gender" className="select" value={Gender} onChange = {e =>setGender(e.target.value)}>Gender</option>
           <option className="email" value="Female" >Female</option>
           <option className="email" value="Male">Male</option>
         </select>
@@ -70,15 +74,15 @@ function Register(){
 
     <div className="row">
     <div className="col form-group">
-       <label>Password</label>
-       < input type = "password" className = "form-control input-fill" placeholder = "Password"/>
+       <label htmlFor="Password" className ="label-text" >Password</label>
+       < input id = "Password" type = "password" className = "form-control input-fill" placeholder = "Password" value={Password} onChange = {e => setPassword(e.target.value)} />
     </div>
     </div>
 
       <div className='row'>
                     <div className='col form-group'>
-                  <label>confirm password</label>
-               <input type='password' className = 'form-control input-fill' id ='control' placeholder = 'confirm password'/>
+                  <label htmlFor="password" className ="label-text" >confirm password</label>
+               <input id = "password" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={Password} onChange = {e => setPassword(e.target.value)}/>
               </div>
       </div>
       <div className='row'>

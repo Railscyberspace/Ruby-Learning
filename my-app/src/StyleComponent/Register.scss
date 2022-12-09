@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
 .form-container-login {
     display: flex;
     width: 100%;
@@ -70,3 +72,9 @@
     color: #814a95;
   }
   
+
+  .label-text{
+    text-transform: capitalize;
+    font-family: 'Open Sans';
+    font-size: 60px;
+  }
