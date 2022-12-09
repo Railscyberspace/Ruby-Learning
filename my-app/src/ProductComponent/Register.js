@@ -9,13 +9,16 @@ import { useState } from "react";
 
 
 function Register(){
-  const [firstname, lastname, email, State, Local_Govts, Phone, Gender, Password] = useState('')
-  const [setFirstName, setLastName, setEmail, setState, setPhone, setGender, setPassword] = useState('')
+  const [firstname, lastname, email, State, Local_Govts, Phone, Gender, Password] = useState()
+  const [setFirstName, setLastName, setEmail, setState, setPhone, setGender, setPassword] = useState()
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+  }
 
    return(
    
     <div>
-   <div className = "form-container" >
+   <form onSubmit={handleSubmit} className = "form-container" >
    <div className = "container-login register">
     <div className="heading-text">
     <h4 className = "login-login text">Create An account</h4>
@@ -25,7 +28,7 @@ function Register(){
     <div className="row">
       <div className="col form-group">
         <label className="label-text" htmlFor="firstname">firstname</label>
-       <input id="firstname" type = "text"className = "form-control input-fill"  placeholder = "Firstname" value={firstname} onChange = {e => setFirstName(e.target.value)}/>
+       <input id="firstname" type = "text" className = "form-control input-fill"  placeholder = "Firstname" value={firstname} onChange = {e => setFirstName(e.target.value)}/>
       </div>	
       <div className="col form-group">
         <label className ="label-text"  htmlFor="lastname">lastname</label>
@@ -85,9 +88,9 @@ function Register(){
                <input id = "password" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={Password} onChange = {e => setPassword(e.target.value)}/>
               </div>
       </div>
-      <div className='row'>
+      <div className='row center'>
           <div className='col form-group'>
-          <button class="btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
+          <button class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
           </div>
       </div>
 
@@ -96,7 +99,7 @@ function Register(){
                <Link to ='/login' className="link-account links "><Link className="links">Already Have an account</Link> Login</Link>
     </div>
 
-   </div>  
+   </form>  
   
 </div>
 
