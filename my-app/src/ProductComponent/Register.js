@@ -20,6 +20,9 @@ function Register(){
   const [confirmPassword,setConfirmPassword] = useState('');
      const handleSubmit = (e) =>{
     e.preventDefault()
+    if(String(firstname) <= 4 && lastname.length <= 16){
+      return true;
+    }
   }
   
    return(
@@ -76,8 +79,8 @@ function Register(){
         <label htmlFor="Gender" className ="label-text">Gender </label>
         <select className="form-select form-select form-control input-fill" aria-label=".form-select-lg example" id = "select-gender">
           <option id="Gender" className="select" value={Gender} onChange = {e =>setGender(e.target.value)}>Gender</option>
-          <option className="email" value="Female" >Female</option>
-          <option className="email" value="Male">Male</option>
+          <option className="email set"  value="Female" >Female</option>
+          <option className="email set" value="Male">Male</option>
         </select>
       </div>	
     </div>
@@ -85,14 +88,14 @@ function Register(){
     <div className="row">
     <div className="col form-group">
        <label htmlFor="Password" className ="label-text" >Password</label>
-       < input id = "Password" required ={true} min ={6} max = {10} type = "password" className = "form-control input-fill" placeholder = "Password" value={Password} onChange = {e => setPassword(e.target.value)} />
+       < input id = "Password" required ={true} min ="4" max = "10" type = "password" className = "form-control input-fill" placeholder = "Password" value={Password} onChange = {e => setPassword(e.target.value)} />
     </div>
     </div>
 
       <div className='row'>
                     <div className='col form-group'>
                   <label htmlFor="password" className ="label-text" >confirm password</label>
-               <input id = "password" required ={true} min = {6} max = {10} type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword} onChange = {e => setConfirmPassword(e.target.value)}/>
+               <input id = "password" required ={true} min = "4" max = "10" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword} onChange = {e => setConfirmPassword(e.target.value)}/>
               </div>
       </div>
       <div className='row center'>

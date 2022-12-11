@@ -24,14 +24,14 @@ function Login(){
                     <div className='row'>
                         <div className='col form-group'>
                             <label htmlFor='email'>Email</label>
-                            <input id = 'email' type='email' className = 'form-control input-fill' placeholder = 'email' value = {email} onChange = {e => setEmail(e.target.value)}/>
+                            <input id = 'email' type='email' required = {true} className = 'form-control input-fill' placeholder = 'email' value = {email} onChange = {e => setEmail(e.target.value)}/>
                         </div>
                     </div>
 
                     <div className='row'>
                         <div className='col form-group'>
                             <label htmlFor='password'>Password</label>
-                            <input id = 'password' type='password' className = 'form-control input-fill'  placeholder = 'password' value={password} onChange = {e => setPassword(e.target.value)}/>
+                            <input id = 'password' type='password' required ={true}  className = 'form-control input-fill'  placeholder = 'password' value={password} onChange = {e => setPassword(e.target.value)}/>
                         </div>
                     </div>
                     <div className='row center'>
