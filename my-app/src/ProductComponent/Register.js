@@ -20,6 +20,16 @@ function Register(){
   const [confirmPassword,setConfirmPassword] = useState('');
      const handleSubmit = (e) =>{
     e.preventDefault()
+    setFirstName('')
+    setLastName('')
+    setEmail('')
+    setState('');
+    setPhone('');
+    setConfirmPassword('');
+    setGender('');
+    setLocal_Govts('');
+    setPassword('');
+    
     if(String(firstname) <= 4 && lastname.length <= 16){
       return true;
     }
