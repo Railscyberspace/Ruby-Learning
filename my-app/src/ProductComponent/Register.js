@@ -48,7 +48,7 @@ function Register(){
     <div className="row">
       <div className="col form-group">
         <label className="label-text" htmlFor="firstname">firstname</label>
-       <input id="firstname" type = "text" min={4} max ={16} className = "form-control input-fill"  placeholder = "Firstname" value={firstname} onChange = {e => setFirstName(e.target.value)}/>
+       <input id="firstname" type = "text" min={4} max ={16} required = {true} className = "form-control input-fill"  placeholder = "Firstname" value={firstname} onChange = {e => setFirstName(e.target.value)}/>
       </div>	
       <div className="col form-group">
         <label className ="label-text"  htmlFor="lastname">lastname</label>
@@ -83,7 +83,7 @@ function Register(){
     <div className="row">
       <div className="col form-group">
         <label className="label-text" htmlFor="Phone">Phone</label>
-       <input id = "Phone" type= "number" className = "form-control input-fill"  placeholder = "Phone" value={Phone} onChange = {e => setPhone(e.target.value)}/>
+       <input id = "Phone" type= "number" minLength={11} maxLength={11} className = "form-control input-fill"  placeholder = "Phone" value={Phone} onChange = {e => setPhone(e.target.value)}/>
       </div>
       <div className="col form-group">
         <label htmlFor="Gender" className ="label-text">Gender </label>
