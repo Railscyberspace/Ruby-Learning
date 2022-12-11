@@ -40,23 +40,23 @@ function Form() {
             <label>
               First name <sup>*</sup>
             </label>
-            <input placeholder="First name" />
+            <input id = "first name" type = "text" placeholder="First name" value={firstName} onChange = {e => setFirstName(e.target.value)} />
           </div>
           <div className="Field">
             <label>Last name</label>
-            <input placeholder="Last name" />
+            <input id = "Last name" type= "text" placeholder="Last name" value={lastName} onChange = {e => setLastName(e.target.value)}  />
           </div>
           <div className="Field">
             <label>
               Email address <sup>*</sup>
             </label>
-            <input placeholder="Email address" />
+            <input id = "Email" type = "email" placeholder="Email address"  value={email} onChange = {e => setEmail(e.target.value)}/>
           </div>
           <div className="Field">
             <label>
               Password <sup>*</sup>
             </label>
-            <input placeholder="Password" />
+            <input id = "Password"  type="password" placeholder="Password" value={password} onChange = {e => setPassword(e.target.value)} />
           </div>
           <div className="Field">
             <label>

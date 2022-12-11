@@ -83,3 +83,19 @@
     font-weight: 600;
     font-size:19px;
   }
+
+.sup{
+  color: red;
+  top: -1.5px;
+  font-size: 100%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}

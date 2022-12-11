@@ -29,7 +29,7 @@ function Register(){
     setGender('');
     setLocal_Govts('');
     setPassword('');
-    
+
     if(String(firstname) <= 4 && lastname.length <= 16){
       return true;
     }
@@ -97,7 +97,7 @@ function Register(){
 
     <div className="row">
     <div className="col form-group">
-       <label htmlFor="Password" className ="label-text" >Password</label>
+       <label htmlFor="Password" className ="label-text" >Password <sup className="sup">*</sup> </label>
        < input id = "Password" required ={true} min ="4" max = "10" type = "password" className = "form-control input-fill" placeholder = "Password" value={Password} onChange = {e => setPassword(e.target.value)} />
     </div>
     </div>
