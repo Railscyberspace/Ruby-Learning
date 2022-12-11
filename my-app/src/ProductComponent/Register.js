@@ -9,12 +9,14 @@ import { useState } from "react";
 
 
 function Register(){
-  const [firstname, lastname, email, State, Local_Govts, Phone, Gender, Password] = useState()
-  const [setFirstName, setLastName, setEmail, setState, setPhone, setGender, setPassword] = useState()
-  const handleSubmit = (e) =>{
+  const [firstname,setFirstName, lastname,setLastName, email,  setEmail, 
+     State,  setState, setPhone, Local_Govts, 
+     setLocal_Govts,  Phone, Gender,  setGender, 
+      Password,setPassword] = useState('');
+     const handleSubmit = (e) =>{
     e.preventDefault()
   }
-
+  
    return(
    
     <div>
@@ -53,7 +55,7 @@ function Register(){
            <div className='col form-group'>
                         <label htmlFor="Local_Govts" className ="label-text"> Local_Govts</label>
                     <select className="form-select form-select form-control input-fill" aria-label=".form-select-lg example" id = "select-gender">
-                      <option className="select" >Select Your Local_Govts</option>
+                      <option className="select" value={Local_Govts} onChange = {e => setLocal_Govts(e.target.value)} >Select Your Local_Govts</option>
                       <option className="email" value="Female" >Yakurr</option>
                       <option className="email" value="Male">Yala</option>
                     </select>
@@ -90,7 +92,7 @@ function Register(){
       </div>
       <div className='row center'>
           <div className='col form-group'>
-          <button class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
+          <button  class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
           </div>
       </div>
 
