@@ -112,14 +112,15 @@ const getIsFormValid =() =>{
     <div className="row">
     <div className="col form-group">
        <label htmlFor="Password" className ="label-text" >Password <sup className="sup">*</sup> </label>
-       < input id = "Password" required ={true} min ="4" max = "10" type = "password" {...PasswordErrorMessage()} className = "form-control input-fill" placeholder = "Password" value={Password.value} onChange = {e => setPassword(e.target.value)} />
+       < input id = "Password" required ={true} min ="4" max = "10" type = "password" {...PasswordErrorMessage()} className = "form-control input-fill" placeholder = "Password" 
+       value={Password.value} onChange = {e => setPassword({...Password,value: e.target.value})} onBlur ={(e) =>{setPassword({...Password, isTouched:true})}} />
     </div>
     </div>
 
       <div className='row'>
                     <div className='col form-group'>
                   <label htmlFor="password" className ="label-text" >confirm password</label>
-               <input id = "password" required ={true} min = "4" max = "10" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword.value} onChange = {e => setConfirmPassword(e.target.value)}/>
+               <input id = "password" required ={true} min = "4" max = "10" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword.value} onChange = {e => setConfirmPassword({...confirmPassword, value: e.target.value})}/>
               </div>
       </div>
       <div className='row center'>
