@@ -17,7 +17,7 @@ import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 import SignUp from './ProductComponent/SignUp';
-// import FeedBack  from './AdvanceReact/FeedBack';
+//  import Form  from './AdvanceReact/Form';
 
 
 function App() {
@@ -127,10 +127,10 @@ function App() {
         <Route path='/signup' element={<SignUp/>}></Route>
       </Routes>
       
-       <body>
-        {/* <FeedBack/> */}
+       {/* <body>
+        <Form/>
          
-      </body>
+      </body> */}
 
 </div>
   );

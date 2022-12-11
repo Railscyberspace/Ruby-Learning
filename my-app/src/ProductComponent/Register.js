@@ -2,46 +2,53 @@ import { Link } from "react-router-dom";
 import '../StyleComponent/Register.scss';
 import '../StyleComponent/Login.scss';
 import { useState } from "react";
-
+import { validateEmail } from "../utils"; 
 
 function Register(){
-  const [firstname,setFirstName ] = useState('') 
-  const [lastname,setLastName] = useState('') 
-  const [email,  setEmail] = useState('') 
-  const [ State,  setState] = useState('')
-  const [ Phone, setPhone] =  useState('')
-  const [ Local_Govts, setLocal_Govts] = useState('') 
-  const [ Gender,  setGender] = useState('') 
-  const [Password,setPassword] = useState({
-    value: "",
-    isTouched: false,
-  }
-  );
-  const [confirmPassword,setConfirmPassword] = useState('');
-     const handleSubmit = (e) =>{
-    e.preventDefault()
-    setFirstName('')
-    setLastName('')
-    setEmail('')
-    setState('');
-    setPhone('');
-    setConfirmPassword('');
-    setGender('');
-    setLocal_Govts('');
-    setPassword('');
-
-    if(String(firstname) <= 4 && lastname.length <= 16){
-      return true;
-    }
-  }
 const PasswordErrorMessage = () => {
   if(Password <= 8)
   return (
     <p className="FieldError">Password should have at least 8 characters</p>
   );
 };
+  const [firstname,setFirstName ] = useState('') 
+  const [lastname,setLastName] = useState('') 
+  const [email,  setEmail] = useState('') 
+  const [ State,  setState] = useState('')
+  const [ Phone, setPhone] =  useState('')
+  const [ Local_Govts, setLocal_Govts] = useState('Gender') 
+  const [ Gender,  setGender] = useState('') 
+  const [Password,setPassword] = useState({
+    value: "",
+    isTouched: false,
+  });
+  const [confirmPassword,setConfirmPassword] = useState({value: "", isTouched: false});
 
-  
+const getIsFormValid =() =>{
+  return(
+    firstname && validateEmail(email) && Password.value.length >= 8 && Gender !== "Gender"
+  )};
+
+  const clearForm =() =>{
+    setFirstName('')
+    setLastName('')
+    setEmail('')
+    setState('');
+    setPhone('');
+    setConfirmPassword('');
+    setLocal_Govts('');
+    setPassword({
+      value: "",
+      isTouched: false
+    });
+    setGender("Gender");
+  }
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    alert("account created sucessfully");
+    clearForm();
+  }  
    return(
    
     <div>
@@ -105,19 +112,19 @@ const PasswordErrorMessage = () => {
     <div className="row">
     <div className="col form-group">
        <label htmlFor="Password" className ="label-text" >Password <sup className="sup">*</sup> </label>
-       < input id = "Password" required ={true} min ="4" max = "10" type = "password" {...PasswordErrorMessage()} className = "form-control input-fill" placeholder = "Password" value={Password} onChange = {e => setPassword(e.target.value)} />
+       < input id = "Password" required ={true} min ="4" max = "10" type = "password" {...PasswordErrorMessage()} className = "form-control input-fill" placeholder = "Password" value={Password.value} onChange = {e => setPassword(e.target.value)} />
     </div>
     </div>
 
       <div className='row'>
                     <div className='col form-group'>
                   <label htmlFor="password" className ="label-text" >confirm password</label>
-               <input id = "password" required ={true} min = "4" max = "10" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword} onChange = {e => setConfirmPassword(e.target.value)}/>
+               <input id = "password" required ={true} min = "4" max = "10" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword.value} onChange = {e => setConfirmPassword(e.target.value)}/>
               </div>
       </div>
       <div className='row center'>
           <div className='col form-group'>
-          <button  class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
+          <button  disabled ={!getIsFormValid} class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
           </div>
       </div>
 
