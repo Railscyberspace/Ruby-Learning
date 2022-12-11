@@ -9,10 +9,14 @@ import { useState } from "react";
 
 
 function Register(){
-  const [firstname,setFirstName, lastname,setLastName, email,  setEmail, 
-     State,  setState, setPhone, Local_Govts, 
-     setLocal_Govts,  Phone, Gender,  setGender, 
-      Password,setPassword] = useState('');
+  const [firstname,setFirstName ] = useState('') 
+  const [lastname,setLastName] = useState('') 
+  const [email,  setEmail] = useState('') 
+  const [ State,  setState] = useState('')
+  const [ Phone, setPhone] =  useState('')
+  const [ Local_Govts, setLocal_Govts] = useState('') 
+  const [ Gender,  setGender] = useState('') 
+  const [Password,setPassword] = useState('');
      const handleSubmit = (e) =>{
     e.preventDefault()
   }

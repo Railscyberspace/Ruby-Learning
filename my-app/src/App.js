@@ -17,7 +17,7 @@ import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 import SignUp from './ProductComponent/SignUp';
-// import DessertsList from './AdvanceReact/List';
+// import FeedBack  from './AdvanceReact/FeedBack';
 
 
 function App() {
@@ -127,10 +127,10 @@ function App() {
         <Route path='/signup' element={<SignUp/>}></Route>
       </Routes>
       
-       {/* <body>
-         <h2>List of low calorie desserts:</h2>
-         <DessertsList data={data1} />
-      </body> */}
+       <body>
+        {/* <FeedBack/> */}
+         
+      </body>
 
 </div>
   );
