@@ -2,6 +2,7 @@ import { useState } from "react";
 
 
 const PasswordErrorMessage = () => {
+    if(Password <= 8 && Password >= 10)
   return (
     <p className="FieldError">Password should have at least 8 characters</p>
   );
@@ -56,7 +57,7 @@ function Form() {
             <label>
               Password <sup>*</sup>
             </label>
-            <input id = "Password"  type="password" placeholder="Password" value={password} onChange = {e => setPassword(e.target.value)} />
+            <input id = "Password" {...PasswordErrorMessage()}  type="password" placeholder="Password" value={password} onChange = {e => setPassword(e.target.value)} />
           </div>
           <div className="Field">
             <label>

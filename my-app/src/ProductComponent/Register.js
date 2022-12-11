@@ -4,10 +4,6 @@ import '../StyleComponent/Login.scss';
 import { useState } from "react";
 
 
-
-
-
-
 function Register(){
   const [firstname,setFirstName ] = useState('') 
   const [lastname,setLastName] = useState('') 
@@ -16,7 +12,11 @@ function Register(){
   const [ Phone, setPhone] =  useState('')
   const [ Local_Govts, setLocal_Govts] = useState('') 
   const [ Gender,  setGender] = useState('') 
-  const [Password,setPassword] = useState('');
+  const [Password,setPassword] = useState({
+    value: "",
+    isTouched: false,
+  }
+  );
   const [confirmPassword,setConfirmPassword] = useState('');
      const handleSubmit = (e) =>{
     e.preventDefault()
@@ -34,6 +34,13 @@ function Register(){
       return true;
     }
   }
+const PasswordErrorMessage = () => {
+  if(Password <= 8)
+  return (
+    <p className="FieldError">Password should have at least 8 characters</p>
+  );
+};
+
   
    return(
    
@@ -98,7 +105,7 @@ function Register(){
     <div className="row">
     <div className="col form-group">
        <label htmlFor="Password" className ="label-text" >Password <sup className="sup">*</sup> </label>
-       < input id = "Password" required ={true} min ="4" max = "10" type = "password" className = "form-control input-fill" placeholder = "Password" value={Password} onChange = {e => setPassword(e.target.value)} />
+       < input id = "Password" required ={true} min ="4" max = "10" type = "password" {...PasswordErrorMessage()} className = "form-control input-fill" placeholder = "Password" value={Password} onChange = {e => setPassword(e.target.value)} />
     </div>
     </div>
 
