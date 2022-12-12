@@ -108,3 +108,10 @@ button[disabled] {
   color: #666666;
   cursor: not-allowed;
 }
+
+.FieldError {
+  position: absolute;
+  bottom: -6px;
+  color: red;
+  font-size: 12px;
+}

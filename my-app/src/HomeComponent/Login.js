@@ -2,16 +2,34 @@ import '../StyleComponent/Login.scss';
 import '../StyleComponent/Register.scss';
 import {Link} from 'react-router-dom';
  import {useState} from 'react';
+ 
 
 function Login(){  
-     const [ password, setPassword] = useState('');
+const PasswordErrorMessage  =() =>{
+    if(Password <= 8)
+    return(
+        <p className='FieldError'>Password should have at least 8 characters</p>
+    );
+};
+
+const clearForm =() =>{
+    setEmail("")
+    setPassword({value: "", isTouched:false})
+
+}
+
+     const [ Password, setPassword] = useState('');
      const [email, setEmail] = useState('')
+
+    const getIsFormValid =()=>{
+        return(email && Password).toLowerCase()
+        .match(`$"h"Hi6993#/`)
+    }
+
      const handleSubmit = (e) =>{
         e.preventDefault()
-        setEmail("")
-        setPassword('')
-
-     }
+        clearForm();
+}
     return(
         <div>
             <form onSubmit={handleSubmit}  className = 'form-container'>              
@@ -32,12 +50,17 @@ function Login(){
                     <div className='row'>
                         <div className='col form-group'>
                             <label htmlFor='password'>Password</label>
-                            <input id = 'password' type='password' required ={true}  className = 'form-control input-fill'  placeholder = 'password' value={password} onChange = {e => setPassword(e.target.value)}/>
+                            <input id = 'password' type='password' required ={true}  className = 'form-control input-fill'  placeholder = 'password' 
+                            value={Password.value} onChange = {e => setPassword({...Password, value:e.target.value})} 
+                            onBlur ={() =>{setPassword({...Password, isTouched:true})}}/>  {Password.isTouched && Password.value.length < 8 ? ( 
+                                <PasswordErrorMessage /> 
+                              ) : null} 
+                
                         </div>
                     </div>
                     <div className='row center'>
                         <div className='col form-group'>
-                        <button disabled={!email && !password} className="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Login</button>
+                        <button disabled={!getIsFormValid()} className="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Login</button>
                         </div>
                     </div>
 

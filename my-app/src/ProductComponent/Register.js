@@ -113,7 +113,10 @@ const getIsFormValid =() =>{
     <div className="col form-group">
        <label htmlFor="Password" className ="label-text" >Password <sup className="sup">*</sup> </label>
        < input id = "Password" required ={true} min ="4" max = "10" type = "password" {...PasswordErrorMessage()} className = "form-control input-fill" placeholder = "Password" 
-       value={Password.value} onChange = {e => setPassword({...Password,value: e.target.value})} onBlur ={(e) =>{setPassword({...Password, isTouched:true})}} />
+       value={Password.value} onChange = {e => setPassword({...Password,value: e.target.value})} onBlur ={() =>{setPassword({...Password, isTouched:true})}} />
+        {Password.isTouched && Password.value.length < 8 ? ( 
+                 <PasswordErrorMessage /> 
+               ) : null} 
     </div>
     </div>
 
@@ -125,7 +128,7 @@ const getIsFormValid =() =>{
       </div>
       <div className='row center'>
           <div className='col form-group'>
-          <button  disabled ={!getIsFormValid} class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
+          <button  disabled ={!getIsFormValid()} class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
           </div>
       </div>
 
