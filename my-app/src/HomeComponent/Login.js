@@ -2,7 +2,7 @@ import '../StyleComponent/Login.scss';
 import '../StyleComponent/Register.scss';
 import {Link} from 'react-router-dom';
  import {useState} from 'react';
- 
+ import { validateEmail } from "../utils"; 
 
 function Login(){  
 const PasswordErrorMessage  =() =>{
@@ -18,18 +18,25 @@ const clearForm =() =>{
 
 }
 
-     const [ Password, setPassword] = useState('');
+     const [ Password, setPassword] = useState({ value: "",
+     isTouched: false});
      const [email, setEmail] = useState('')
 
-    const getIsFormValid =()=>{
-        return(email && Password).toLowerCase()
-        .match('')
-    }
+  
+   
+     const getIsFormValid = () => { 
+        return ( 
+          email && 
+          validateEmail(email) && 
+          Password.value.length >= 8
+        ); 
+      }; 
 
      const handleSubmit = (e) =>{
         e.preventDefault()
         clearForm();
 }
+
     return(
         <div>
             <form onSubmit={handleSubmit}  className = 'form-container'>              
@@ -43,14 +50,14 @@ const clearForm =() =>{
                     <div className='row'>
                         <div className='col form-group'>
                             <label htmlFor='email'>Email</label>
-                            <input id = 'email' type='email' required = {true} className = 'form-control input-fill' placeholder = 'email' value = {email} onChange = {e => setEmail(e.target.value)}/>
+                            <input id = 'email' type='email' required = {true} className = 'form-control input-fill' placeholder = 'email' value = {email.value} onChange = {e => setEmail(e.target.value)}/>
                         </div>
                     </div>
 
                     <div className='row'>
                         <div className='col form-group'>
                             <label htmlFor='password'>Password</label>
-                            <input id = 'password' type='password' required ={true}  className = 'form-control input-fill'  placeholder = 'password' 
+                            <input id = 'password' type='password' required ={true}  className = 'form-control input-fill'  placeholder = 'Password' 
                             value={Password.value} onChange = {e => setPassword({...Password, value:e.target.value})} 
                             onBlur ={() =>{setPassword({...Password, isTouched:true})}}/>  {Password.isTouched && Password.value.length < 8 ? ( 
                                 <PasswordErrorMessage /> 
@@ -60,7 +67,7 @@ const clearForm =() =>{
                     </div>
                     <div className='row center'>
                         <div className='col form-group'>
-                        <button disabled={!getIsFormValid()} className="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Login</button>
+                        <button disabled = {!getIsFormValid()}  className="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Login</button>
                         </div>
                     </div>
 
