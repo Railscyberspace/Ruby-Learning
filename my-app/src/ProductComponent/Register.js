@@ -61,17 +61,17 @@ const getIsFormValid =() =>{
     </div> 
     <div className="row">
       <div className="col form-group">
-        <label className="label-text" htmlFor="firstname">firstname</label>
+        <label className="label-text" htmlFor="firstname">firstname <sup className="sup">*</sup> </label>
        <input id="firstname" type = "text" min={4} max ={16} required = {true} className = "form-control input-fill"  placeholder = "Firstname" value={firstname} onChange = {e => setFirstName(e.target.value)}/>
       </div>	
       <div className="col form-group">
-        <label className ="label-text"  htmlFor="lastname">lastname</label>
+        <label className ="label-text"  htmlFor="lastname">lastname <sup className="sup">*</sup> </label>
        <input id = "lastname" type="text" min = {4} max ={16} required ={true} className ="form-control input-fill" placeholder="Lastname" value={lastname} onChange ={e => setLastName(e.target.value)} />
       </div>	
     </div>
     <div className="row">
       <div className="col form-group">
-        <label className ="label-text" htmlFor="email"> Email</label>
+        <label className ="label-text" htmlFor="email"> Email <sup className="sup">*</sup> </label>
         <input id = "email" type="email" required ={true} className = "form-control input-fill"  placeholder = "Email"value={email} onChange ={e => setEmail(e.target.value)} />
       </div>
     </div>
@@ -96,11 +96,11 @@ const getIsFormValid =() =>{
     
     <div className="row">
       <div className="col form-group">
-        <label className="label-text" htmlFor="Phone">Phone</label>
+        <label className="label-text" htmlFor="Phone">Phone <sup className="sup">*</sup> </label>
        <input id = "Phone" type= "number" minLength={11} maxLength={11} className = "form-control input-fill"  placeholder = "Phone" value={Phone} onChange = {e => setPhone(e.target.value)}/>
       </div>
       <div className="col form-group">
-        <label htmlFor="Gender" className ="label-text">Gender </label>
+        <label htmlFor="Gender" className ="label-text">Gender <sup className="sup">*</sup>  </label>
         <select className="form-select form-select form-control input-fill" aria-label=".form-select-lg example" id = "select-gender">
           <option id="Gender" className="select" value={Gender} onChange = {e =>setGender(e.target.value)}>Gender</option>
           <option className="email set"  value="Female" >Female</option>
@@ -114,16 +114,16 @@ const getIsFormValid =() =>{
        <label htmlFor="Password" className ="label-text" >Password <sup className="sup">*</sup> </label>
        < input id = "Password" required ={true} min ="4" max = "10" type = "password" {...PasswordErrorMessage()} className = "form-control input-fill" placeholder = "Password" 
        value={Password.value} onChange = {e => setPassword({...Password,value: e.target.value})} onBlur ={() =>{setPassword({...Password, isTouched:true})}} />
-        {Password.isTouched && Password.value.length < 8 ? ( 
-                 <PasswordErrorMessage /> 
-               ) : null} 
+        {Password.isTouched && Password.value.length < 8 ? ( <PasswordErrorMessage /> ) : null} 
     </div>
     </div>
 
       <div className='row'>
                     <div className='col form-group'>
-                  <label htmlFor="password" className ="label-text" >confirm password</label>
-               <input id = "password" required ={true} min = "4" max = "10" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword.value} onChange = {e => setConfirmPassword({...confirmPassword, value: e.target.value})}/>
+                  <label htmlFor="password" className ="label-text" >confirm password <sup className="sup">*</sup></label>
+               <input id = "password" required ={true} min = "4" max = "10" type='password' className = 'form-control input-fill'  placeholder = 'confirm password' value={confirmPassword.value} onChange = {e => setConfirmPassword({...confirmPassword, value: e.target.value})} 
+               onBlur ={() =>{setPassword({...Password, isTouched:true})}} />
+               {Password.isTouched && Password.value.length < 8 ? ( <PasswordErrorMessage /> ) : null} 
               </div>
       </div>
       <div className='row center'>
