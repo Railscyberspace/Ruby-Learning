@@ -23,7 +23,7 @@ const clearForm =() =>{
 
     const getIsFormValid =()=>{
         return(email && Password).toLowerCase()
-        .match(`$"h"Hi6993#/`)
+        .match('')
     }
 
      const handleSubmit = (e) =>{
@@ -36,8 +36,8 @@ const clearForm =() =>{
                 <div className='container-login register'>
                 <div className="heading-text">
                     <h4 className = "login-login text">Create An account</h4>
-                    <span className = "welcome-message text"> Welcome to the future of power backups.
-                        Login to your account </span>
+                    <span className = "welcome-message text"> Welcome to the future of power backups.</span>
+                        <span>Login to your account </span>
                 </div> 
                       
                     <div className='row'>
