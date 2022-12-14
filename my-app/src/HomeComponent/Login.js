@@ -86,7 +86,7 @@ const clearForm =() =>{
                 </div>
 
                 <div className = "link-account">
-                          <Link to ='/register' className="link-account links "><Link className="links">Don't have an Account</Link> Login</Link>
+                         <span  className="links">Don't have an Account</span><Link to ="/register" className='links reg'>Register</Link>
                 </div>
 
             </form>
