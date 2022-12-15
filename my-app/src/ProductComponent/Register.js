@@ -131,6 +131,7 @@ const getIsFormValid =() =>{
           <button  disabled ={!getIsFormValid()} class="button-log-google btn btn-outline-success butting btn-secondary" type="submit">Create An Account</button>
           </div>
       </div>
+      
 
   </div>
      <div className = "link-account">
