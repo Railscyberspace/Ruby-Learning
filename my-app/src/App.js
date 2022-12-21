@@ -3,7 +3,6 @@ import './App.scss';
 import './StyleComponent/Home.scss';
 import './StyleComponent/Logo.scss';
 import './StyleComponent/Nav.scss';
-import Contact from './HomeComponent/Contact';
 import Login from './HomeComponent/Login';
 import LogOut from './HomeComponent/LogOut';
 import {Routes, Route, Link } from 'react-router-dom';
@@ -117,7 +116,6 @@ function App() {
           
       <Routes>
        <Route path ="/" element ={<Home/>}></Route>
-        <Route path ="/contact" element ={<Contact/>}></Route>
         <Route path ="/login" element ={<Login/>}></Route>
         <Route path ="/signUp" element ={<SignUp/>}></Route>
         <Route path ="/logout" element ={<LogOut/>}></Route>
