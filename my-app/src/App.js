@@ -18,8 +18,9 @@ import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 import SignUp from './ProductComponent/SignUp';
 //  import Form  from './AdvanceReact/Form';
-import Switch from './Switch/Switch';
-import { ThemeProvider, useTheme } from './HomeComponent/ThemeContext';
+import MainSwitch from  "./MainSwitch"
+import { ThemeProvider } from './HomeComponent/ThemeContext';
+
 
 function App() {
   // const data1 = [
@@ -129,7 +130,9 @@ function App() {
       </Routes>
 
       
-      
+      <ThemeProvider>
+        <MainSwitch/>
+      </ThemeProvider>
        
 
 </div>

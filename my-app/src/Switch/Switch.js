@@ -1,4 +1,4 @@
-import Switch from '../StyleComponent/Switch'
+import  '../StyleComponent/Switch.scss';
 import  {useTheme} from '../HomeComponent/ThemeContext';
 
 
