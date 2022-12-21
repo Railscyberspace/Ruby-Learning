@@ -18,7 +18,8 @@ import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 import SignUp from './ProductComponent/SignUp';
 //  import Form  from './AdvanceReact/Form';
-
+import Switch from './Switch/Switch';
+import { ThemeProvider, useTheme } from './HomeComponent/ThemeContext';
 
 function App() {
   // const data1 = [
@@ -126,11 +127,10 @@ function App() {
         <Route path='/search' element={<Search/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
       </Routes>
+
       
-       {/* <body>
-        <Form/>
-         
-      </body> */}
+      
+       
 
 </div>
   );
