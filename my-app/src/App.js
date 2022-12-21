@@ -63,7 +63,6 @@ function App() {
                      </div>
                     </div>
             </nav>
-          
       <Routes>
        <Route path ="/" element ={<Home/>}></Route>
         <Route path ="/login" element ={<Login/>}></Route>
@@ -75,10 +74,6 @@ function App() {
         <Route path='/search' element={<Search/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
       </Routes>
-
-      
-   
-
 </div>
   );
 }
