@@ -7,7 +7,6 @@ import Login from './HomeComponent/Login';
 import LogOut from './HomeComponent/LogOut';
 import {Routes, Route, Link } from 'react-router-dom';
 import Home from './HomeComponent/Home';
-// import logo from './Images/logo.png';
 import'bootstrap/dist/css/bootstrap.min.css';
 import Inverters from './ProductComponent/Inverters';
 import Batteries from './ProductComponent/Batteries';
@@ -16,7 +15,7 @@ import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 import SignUp from './ProductComponent/SignUp';
-//  import Form  from './AdvanceReact/Form';
+import useStateHook from './AdvanceReact/UseStateHook';
 
 
 
@@ -58,7 +57,7 @@ function App() {
                         <div className="d-flex">
                             <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
                             <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link>
-                            <Link to = "signup" className = "btn auth-btn small-btn login-btn" >SignUp</Link>
+                            <Link to = "usestatehook" className = "btn auth-btn small-btn login-btn" >SignUp</Link>
                         </div>
                      </div>
                     </div>
@@ -72,9 +71,13 @@ function App() {
         <Route path='/batteries' element={<Batteries/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/search' element={<Search/>}></Route>
-        <Route path='/signup' element={<SignUp/>}></Route>
+        <Route path='/usestatehook' element={<useStateHook/>}></Route>
       </Routes>
+
 </div>
+
+
+   
   );
 }
 export default App;
