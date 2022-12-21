@@ -21,9 +21,6 @@ import SignUp from './ProductComponent/SignUp';
 
 
 function App() {
-
-
-  
   return (
   <div>
               <nav className=" navbar navbar-expand-lg sticky-top navbar-light bg-light" >
