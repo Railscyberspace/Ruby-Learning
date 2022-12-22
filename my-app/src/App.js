@@ -15,7 +15,7 @@ import './StyleComponent/header.scss';
 import './StyleComponent/Logo.scss';
 import Search  from './ProductComponent/Search';
 import SignUp from './ProductComponent/SignUp';
-import useStateHook from './AdvanceReact/UseStateHook';
+// import useHook from './AdvanceReact/useHook';
 
 
 
@@ -57,11 +57,12 @@ function App() {
                         <div className="d-flex">
                             <Link to = "login" className = "btn auth-btn register-btn" >Login</Link> 
                             <Link to = "register" className = "btn auth-btn small-btn login-btn" >Register</Link>
-                            <Link to = "usestatehook" className = "btn auth-btn small-btn login-btn" >SignUp</Link>
+                            <Link to = "usehook" className = "btn auth-btn small-btn login-btn" ></Link>
                         </div>
                      </div>
                     </div>
             </nav>
+            <body><useStateHook let name = {"rails"} /></body>
       <Routes>
        <Route path ="/" element ={<Home/>}></Route>
         <Route path ="/login" element ={<Login/>}></Route>
@@ -71,7 +72,7 @@ function App() {
         <Route path='/batteries' element={<Batteries/>}></Route>
         <Route path='/register' element={<Register/>}></Route>
         <Route path='/search' element={<Search/>}></Route>
-        <Route path='/usestatehook' element={<useStateHook/>}></Route>
+        <Route path='/usehook' element={<useHook/>}></Route>
       </Routes>
 
 </div>
