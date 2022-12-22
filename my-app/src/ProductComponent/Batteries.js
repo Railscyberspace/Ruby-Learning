@@ -137,7 +137,10 @@ function Battery(){
            </div>
 
            </div>
+
+
 </div>
+
     )
 }
 

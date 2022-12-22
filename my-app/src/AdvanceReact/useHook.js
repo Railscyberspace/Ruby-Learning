@@ -1,3 +1,4 @@
+
 import { useState} from "react";
 
 function useHook(){
@@ -9,7 +10,7 @@ function useHook(){
     return (
         <div>
             <h1>{restaurantName}</h1>
-            <button onClick={updateRestaurantName}>Update restaurantName</button>
+            <button  className="btn btn" onClick={updateRestaurantName}>Update restaurantName</button>
         </div>
     )
 };

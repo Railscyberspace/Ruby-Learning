@@ -74,7 +74,6 @@ function App() {
         <Route path='/search' element={<Search/>}></Route>
         <Route path='/usehook' element={<useHook/>}></Route>
       </Routes>
-
 </div>
 
 
